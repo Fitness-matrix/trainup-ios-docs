@@ -31,17 +31,36 @@ strong { color: #fff; }
 <body>
 <div class="wrap">
 
-  <h1>隐私政策 · Privacy Policy</h1>
+  <h1 id="pageTitle">隐私政策</h1>
   <div class="toc">
-    <a href="#zh">中文</a>
-    <a href="#en">English</a>
+    <label for="languageSelector">Language / 语言</label>
+    <select id="languageSelector" aria-label="Language / 语言">
+      <option value="ar">العربية</option>
+      <option value="ca">Català</option>
+      <option value="de">Deutsch</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="hi">हिन्दी</option>
+      <option value="it">Italiano</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="pl">Polski</option>
+      <option value="pt-BR">Português (Brasil)</option>
+      <option value="pt-PT">Português (Portugal)</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="zh-Hans">简体中文</option>
+      <option value="zh-Hant">繁體中文</option>
+    </select>
     <a href="index.html">← Home</a>
   </div>
 
   <!-- ============ 中文 ============ -->
-  <section id="zh" class="section">
+  <section id="zh-Hans" lang="zh-Hans" class="section">
+    <span id="zh"></span>
     <h2>中文版</h2>
-    <p class="meta">生效日期：2026 年 9 月 6 日</p>
+    <p class="meta">生效日期：2026 年 10 月 1 日</p>
 
     <p>「Pumpa 练记」（以下简称"本应用"）由独立开发者 <strong>xpzeng001@gmail.com</strong> 开发并维护。我们非常重视你的隐私，本政策说明本应用如何处理你的数据。</p>
 
@@ -102,9 +121,941 @@ strong { color: #fff; }
   </section>
 
   <!-- ============ English ============ -->
+
+  <!-- ============ Added localizations ============ -->
+  <section id="ar" lang="ar" class="section">
+    <h2>سياسة الخصوصية</h2>
+    <p class="meta">تاريخ السريان: 1 أكتوبر 2026</p>
+
+    <p>تم تطوير "Pumpa 练记" ("التطبيق") وصيانته بواسطة مطور مستقل يمكن الوصول إليه على <strong>xpzeng001@gmail.com</strong>. نحن نأخذ خصوصيتك على محمل الجد. تشرح هذه السياسة كيفية تعامل التطبيق مع بياناتك.</p>
+
+    <h3>1. ما نقوم بمعالجته</h3>
+    <p>لا يحتوي التطبيق على تحليلات أو تتبع أو أدوات تطوير برامج (SDK) تابعة لجهات خارجية، ونحن لا نبيع بياناتك الشخصية.</p>
+    <p>لتوفير تسجيل التمرين وخطط التدريب والإحصاءات والسجل والأدوات، يعالج التطبيق البيانات التي تدخلها أو تنشئها، بما في ذلك سجلات التمرين وخطط التدريب والمجموعات المكتملة وقياسات الجسم والتفضيلات وحالة الاشتراك وصور التمرين أو الملصقات التي تختار إضافتها.</p>
+    <p>ما لم تختر تقديمه أو استخدام ميزة تتطلب ذلك، فإن التطبيق لا يطلب منك اسمك الحقيقي، أو رقم هاتفك، أو عنوان بريدك الإلكتروني، أو موقعك الدقيق.</p>
+
+    <h3>2. صحة التفاح (اختياري)</h3>
+    <p>بعد منح الإذن، يقرأ التطبيق التدريبات ومعدل ضربات القلب والطاقة النشطة وكتلة الجسم ومعدل ضربات القلب أثناء الراحة من Apple Health لتنظيم سجل التمرين وعرض المقاييس الصحية وإنشاء إحصائيات التمرين وإظهار اتجاهات الجسم. لا يقوم التطبيق بكتابة البيانات إلى Apple Health.</p>
+    <p>يتم تخزين البيانات المقروءة من Apple Health على جهازك فقط. ولا يتم تحميله على خوادم المطورين أو CloudKit أو iCloud، ولا يستخدم للإعلان أو التسويق أو استخراج البيانات أو المشاركة مع الأصدقاء. يمكنك تغيير الوصول أو إبطاله في أي وقت في تطبيق Health أو إعدادات النظام.</p>
+
+    <h3>3. التخزين المحلي ومزامنة iCloud</h3>
+    <p>يتم تخزين سجلات التمرين وقياسات الجسم والتفضيلات التي تقوم بإنشائها مباشرة في Pumpa محليًا على جهازك بشكل افتراضي.</p>
+    <p>إذا كان لديك اشتراك Premium (Pro)، فإن التطبيق يستخدم <strong>iCloud Key-Value Store</strong> من Apple لمزامنة سجلات وإعدادات التمرين التي أنشأتها Pumpa عبر الأجهزة التي تم تسجيل الدخول إليها بنفس معرف Apple. يتم استبعاد البيانات المستوردة من Apple Health من مزامنة iCloud.</p>
+    <p>يتم تخزين هذه البيانات وإدارتها بواسطة Apple ضمن حساب iCloud الخاص بك. لا يقرأ المطور عادةً محتوى مزامنة iCloud الخاص بك مباشرةً، بينما تقوم Apple بمعالجة البيانات بموجب شروطها وسياسة الخصوصية الخاصة بها. يمكنك تعطيل iCloud ضمن <em>الإعدادات → Apple ID → iCloud</em>.</p>
+
+    <h3>4. الكاميرا والصور والتعرف على الوضعية</h3>
+    <p>عندما تختار استخدام تمرين السحب أو الضغط أو تحدي التعرف المماثل، يقوم التطبيق بمعالجة تغذية الكاميرا على جهازك لتحليل وضعية الجسم وتقدير مرات التكرار. لا يتم تحميل إطارات الكاميرا الحية المستخدمة للتعرف على خوادم المطور لمجرد أنك تستخدم التعرف على الوضع.</p>
+    <p>إذا اخترت تسجيل فيديو تحدي أو حفظ ملصق تمرين، فسيحفظ التطبيق هذا المحتوى على جهازك أو مكتبة الصور بعد الحصول على الإذن. نتائج التعرف مخصصة لتتبع اللياقة البدنية والترفيه فقط، وقد تكون غير دقيقة، وليست تشخيصًا طبيًا أو نصيحة صحية متخصصة.</p>
+
+    <h3>5. وسائط التمرين والتخزين السحابي الذي يديره المطور</h3>
+    <p>عندما تختار إضافة أو مشاركة أو عمل نسخة احتياطية من صور التمرين أو الملصقات أو مقاطع فيديو التحدي، قد يقوم التطبيق بتحميل الوسائط التي حددتها إلى وحدة التخزين السحابية التي يديرها المطور أو مزود الخدمة للعرض داخل التطبيق ومشاركة الأصدقاء والنسخ الاحتياطي واستعادة السجل.</p>
+    <p>قد تتضمن التحميلات ملف الوسائط ونوع الملف ومعرف التمرين ذي الصلة وروابط الوسائط اللازمة للعرض. نحن لا نستخدم وسائط التمرين أو بيانات التمرين للإعلان أو التتبع عبر التطبيقات أو البيع لأطراف ثالثة.</p>
+    <p>يمكنك تجنب تحميل الوسائط من خلال عدم إضافتها أو مشاركتها. يتم الاحتفاظ بالمحتوى الذي تم تحميله أثناء الحاجة لتوفير الميزة ذات الصلة. بعد أن لم تعد هناك حاجة إليه أو بعد أن تطلب حذفه، سيتم حذفه أو إخفاء هويته، على الرغم من أن النسخ الاحتياطية الأمنية قد تبقى حتى تكمل دورة تدوير معقولة.</p>
+
+    <h3>6. مساءلة الأصدقاء وCloudKit (اختياري)</h3>
+    <p>إذا <strong>أضفت صديقًا</strong>، فسيشارك التطبيق ما يلي مع هذا الصديق من خلال قاعدة بيانات CloudKit العامة من Apple:</p>
+    <ul>
+      <li>تاريخ التمرين ومدته والسعرات الحرارية المحروقة واسم فئة التمرين</li>
+      <li><strong>اسم العرض</strong> الذي تحدده داخل التطبيق (الاسم الافتراضي هو اسم جهازك؛ ويمكن تعديله ضمن <em>الأدوات → الإشراف المتبادل بين الأصدقاء</em>؛ وهذا ما يراه الأصدقاء)</li>
+      <li>صور التمرين والملصقات وروابط الوسائط ذات الصلة التي تختار استخدامها لتسجيل الوصول أو المشاركة</li>
+      <li>عند النقر على الزر "تذكير صديقك"، يتم إرسال إشعار دفع إلى جهاز ذلك الصديق (يحتوي على اسم العرض الخاص بك)</li>
+    </ul>
+    <p>ما لم تضعه في اسم العرض أو الملاحظة أو عنصر الوسائط، فإن التطبيق لا يطلب اسمك الحقيقي أو رقم هاتفك أو عنوان بريدك الإلكتروني أو قياسات جسمك أو وزنك أو يشاركه عمدًا مع الأصدقاء.</p>
+    <p>تستخدم الهوية معرف سجل مستخدم iCloud (CKUserRecordID) الذي تم تعيينه بواسطة Apple. لا يكشف هذا المعرف عادة عن هويتك الحقيقية في حد ذاته. ومع ذلك، يجوز للمطور عرض السجلات وإدارتها في حاوية CloudKit الخاصة بالتطبيق من خلال أدوات CloudKit عند تقديم الدعم أو صيانة الخدمة أو معالجة إساءة الاستخدام أو الامتثال للقانون.</p>
+    <p>تؤدي إزالة صديق إلى إيقاف المشاركة المستقبلية وتمنع هذا الصديق من عرض تسجيلات الوصول الجديدة من خلال التطبيق. قد لا يتم حذف سجلات CloudKit الحالية أو النسخ الاحتياطية للوسائط أو المحتوى الذي تم استلامه بالفعل على جهاز آخر تلقائيًا أو على الفور. اتصل بنا باستخدام البريد الإلكتروني أدناه لطلب حذف المحتوى السحابي ذي الصلة.</p>
+
+    <h3>7. عمليات الشراء والاشتراكات داخل التطبيق</h3>
+    <p>تتم معالجة الاشتراكات الشهرية والاشتراكات السنوية وعمليات إلغاء القفل مدى الحياة بواسطة Apple من خلال App Store. التطبيق <strong>لا يتلقى رقم بطاقة الدفع الخاصة بك أو كلمة مرور معرف Apple</strong>؛ فهو يقرأ نتائج الشراء وحالة الاستحقاق المقدمة من Apple لتحديد ما إذا كان يجب فتح ميزات Pro أم لا.</p>
+
+    <h3>8. الاستبقاء والحذف والأمان</h3>
+    <p>يمكنك التحكم في البيانات المخزنة محليًا على جهازك ويجوز لك حذفها باستخدام عناصر التحكم المتاحة في التطبيق أو عن طريق إلغاء تثبيت التطبيق. يمكنك إدارة بيانات iCloud من خلال إعدادات iCloud للنظام. يتم الاحتفاظ بسجلات قاعدة بيانات CloudKit العامة والوسائط السحابية التي يديرها المطورون أثناء الحاجة إليها بشكل معقول لوظائف الأصدقاء والمزامنة والنسخ الاحتياطي والاسترداد والأمان وحل النزاعات.</p>
+    <p>للسؤال عن المحتوى الذي تتم معالجته بواسطة الخدمات السحابية التي يديرها المطور أو طلب حذفه، أرسل بريدًا إلكترونيًا إلى <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> وقدم معلومات كافية لتحديد موقع السجلات. سنقوم بمعالجة الطلبات التي تم التحقق منها وفقًا للقانون المعمول به والأمان ومتطلبات منع إساءة الاستخدام.</p>
+    <p>نحن نستخدم ضمانات فنية وتنظيمية معقولة، ولكن لا يمكن ضمان أمان التخزين المحلي أو النقل عبر الشبكة أو الخدمة السحابية بشكل كامل.</p>
+
+    <h3>9. مقدمو الخدمة</h3>
+    <p>يجوز للتطبيق استخدام خدمات App Store وStoreKit وHealthKit وiCloud وCloudKit والإشعارات الفورية والصور من Apple، بالإضافة إلى الخدمات السحابية التي قام المطور بتكوينها لتخزين الوسائط ووظائف الواجهة الخلفية الضرورية. يقوم كل مزود بمعالجة البيانات بموجب شروطه وسياسة الخصوصية الخاصة به.</p>
+
+    <h3>10. خصوصية الأطفال</h3>
+    <p>التطبيق غير موجه للأطفال دون سن 13 عامًا ولا يجمع معلومات شخصية عن الأطفال عمدًا.</p>
+
+    <h3>11. التغييرات</h3>
+    <p>سيتم نشر تحديثات هذه السياسة على هذه الصفحة؛ وستتم مراجعة "تاريخ السريان" في الأعلى وفقًا لذلك.</p>
+
+    <h3>12. اتصل</h3>
+    <p>هل لديك أسئلة؟ البريد الإلكتروني <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="ca" lang="ca" class="section">
+    <h2>Política de privadesa</h2>
+    <p class="meta">Data d'entrada en vigor: 1 d'octubre de 2026</p>
+
+    <p>"Pumpa 练记" (l'"Aplicació") està desenvolupada i mantinguda per un desenvolupador independent, que es pot contactar a <strong>xpzeng001@gmail.com</strong>. Ens prenem seriosament la teva privadesa. Aquesta política explica com l'aplicació gestiona les vostres dades.</p>
+
+    <h3>1. Què processem</h3>
+    <p>L'aplicació no conté SDK d'anàlisi, seguiment o publicitat de tercers, i no venem les vostres dades personals.</p>
+    <p>Per proporcionar registres d'entrenament, plans d'entrenament, estadístiques, historial i widgets, l'aplicació processa les dades que introduïu o genereu, inclosos els registres d'entrenament, els plans d'entrenament, els conjunts completats, les mesures corporals, les preferències, l'estat de la subscripció i les fotos o pòsters d'entrenament que trieu afegir.</p>
+    <p>Llevat que decidiu proporcionar-lo o utilitzar una funció que ho requereixi, l'aplicació no us demanarà el vostre nom real, número de telèfon, adreça electrònica o ubicació precisa.</p>
+
+    <h3>2. Apple Health (opcional)</h3>
+    <p>Després de concedir el permís, l'aplicació llegeix entrenaments, freqüència cardíaca, energia activa, massa corporal i freqüència cardíaca en repòs d'Apple Health per organitzar l'historial d'entrenament, mostrar mètriques de salut, generar estadístiques d'entrenament i mostrar tendències corporals. L'aplicació no escriu dades a Apple Health.</p>
+    <p>Les dades llegides d'Apple Health només s'emmagatzemen al vostre dispositiu. No es penja als servidors del desenvolupador, CloudKit o iCloud, i no s'utilitza per a publicitat, màrqueting, extracció de dades ni per compartir amb amics. Pots canviar o revocar l'accés en qualsevol moment a l'aplicació Salut o a la configuració del sistema.</p>
+
+    <h3>3. Emmagatzematge local i sincronització d'iCloud</h3>
+    <p>Els registres d'entrenament, les mesures corporals i les preferències que creeu directament a Pumpa s'emmagatzemen localment al vostre dispositiu de manera predeterminada.</p>
+    <p>Si teniu una subscripció Premium (Pro), l'aplicació utilitza la <strong>iCloud Key-Value Store</strong> d'Apple per sincronitzar els registres d'entrenament i la configuració creats per Pumpa entre els dispositius amb la mateixa identificació d'Apple. Les dades importades d'Apple Health s'exclouen de la sincronització d'iCloud.</p>
+    <p>Apple emmagatzema i gestiona aquestes dades al teu compte d'iCloud. Normalment, el desenvolupador no llegeix directament el contingut privat de la sincronització d'iCloud, mentre que Apple processa les dades segons els seus propis termes i política de privadesa. Podeu desactivar iCloud a <em>Configuració → ID d'Apple → iCloud</em>.</p>
+
+    <h3>4. Reconeixement de càmera, fotos i poses</h3>
+    <p>Quan trieu fer servir un repte de reconeixement de pull-up, push-up o similar, l'aplicació processa l'alimentació de la càmera del vostre dispositiu per analitzar la posició corporal i estimar les repeticions. Els fotogrames de càmeres en directe utilitzats per al reconeixement no es pengen als servidors del desenvolupador només perquè feu servir el reconeixement de poses.</p>
+    <p>Si trieu gravar un vídeo de repte o desar un pòster d'entrenament, l'aplicació desa aquest contingut al vostre dispositiu o a la biblioteca de Fotos després de rebre el permís. Els resultats del reconeixement són només per al seguiment de la condició física i l'entreteniment, poden ser inexactes i no són diagnòstics mèdics ni consells de salut professional.</p>
+
+    <h3>5. Mitjans d'entrenament i emmagatzematge al núvol operat pel desenvolupador</h3>
+    <p>Quan trieu afegir, compartir o fer una còpia de seguretat de fotos d'entrenament, pòsters o vídeos de desafiaments, l'aplicació pot penjar els mitjans que heu seleccionat a l'emmagatzematge al núvol gestionat pel desenvolupador o un proveïdor de serveis per a la visualització a l'aplicació, la compartició d'amics, la còpia de seguretat i la recuperació de l'historial.</p>
+    <p>Les càrregues poden incloure el fitxer multimèdia, el tipus de fitxer, un identificador d'entrenament relacionat i els enllaços multimèdia necessaris per a la visualització. No utilitzem mitjans d'entrenament ni dades d'entrenament per a publicitat, seguiment entre aplicacions o venda a tercers.</p>
+    <p>Podeu evitar penjar contingut multimèdia no afegint-lo ni compartint-lo. El contingut penjat es conserva mentre és necessari per proporcionar la funció rellevant. Després que ja no sigui necessari o quan sol·liciteu la supressió, se suprimirà o es convertirà en anònim, tot i que les còpies de seguretat de seguretat poden romandre fins que completin un cicle de rotació raonable.</p>
+
+    <h3>6. Responsabilitat dels amics i CloudKit (opcional)</h3>
+    <p>Si <strong>afegeix un amic</strong>, l'aplicació comparteix el següent amb aquest amic a través de la base de dades pública CloudKit d'Apple:</p>
+    <ul>
+      <li>Data de l'entrenament, durada, calories cremades i nom de la categoria d'exercici</li>
+      <li>El <strong>nom de visualització</strong> que heu definit dins de l'aplicació (per defecte és el nom del vostre dispositiu; editable a <em>Eines → Supervisió mútua d'amics</em>; això és el que veuen els amics)</li>
+      <li>Fotos d'entrenament, pòsters i enllaços multimèdia relacionats que trieu utilitzar per registrar-vos o compartir</li>
+      <li>Quan toqueu el botó "Recorda al teu amic", s'envia una notificació automàtica al dispositiu d'aquest amic (que conté el teu nom visible)</li>
+    </ul>
+    <p>Llevat que el col·loqueu en un nom de visualització, una nota o un element multimèdia, l'aplicació no requereix ni comparteix intencionadament el vostre nom real, número de telèfon, adreça electrònica, mesures corporals o pes amb els amics.</p>
+    <p>Identity utilitza l'identificador de registre d'usuari d'iCloud (CKUserRecordID) assignat per Apple. Aquest identificador no revela normalment la vostra identitat del món real per si mateix. Tanmateix, el desenvolupador pot veure i gestionar els registres del contenidor CloudKit de l'aplicació mitjançant les eines de CloudKit quan ofereix assistència, manté el servei, s'ocupa d'abús o compleix la llei.</p>
+    <p>El fet de suprimir un amic atura la compartició futura i impedeix que aquest amic vegi nous registres a través de l'aplicació. És possible que els registres de CloudKit, les còpies de seguretat multimèdia o el contingut ja rebut en un altre dispositiu no s'eliminin automàticament o immediatament. Contacteu-nos mitjançant el correu electrònic següent per sol·licitar la supressió del contingut del núvol relacionat.</p>
+
+    <h3>7. Compres i subscripcions des de l'aplicació</h3>
+    <p>Apple processa les subscripcions mensuals, les anuals i els desbloqueigs de per vida a través de l'App Store. L'aplicació <strong>no rep el número de la targeta de pagament ni la contrasenya de l'identificador d'Apple</strong>; llegeix els resultats de la compra i l'estat dels drets proporcionats per Apple per determinar si s'han de desbloquejar les funcions Pro.</p>
+
+    <h3>8. Retenció, supressió i seguretat</h3>
+    <p>Controleu les dades emmagatzemades localment al vostre dispositiu i podeu suprimir-les mitjançant els controls disponibles de l'aplicació o desinstal·lant l'aplicació. Podeu gestionar les dades d'iCloud mitjançant la configuració d'iCloud del sistema. Els registres de bases de dades públiques de CloudKit i els mitjans de núvol operats pel desenvolupador es conserven mentre són raonablement necessaris per a les funcions d'amic, sincronització, còpia de seguretat, recuperació, seguretat i resolució de disputes.</p>
+    <p>Per preguntar o sol·licitar la supressió del contingut gestionat pels serveis al núvol gestionats per desenvolupadors, envieu un correu electrònic a <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> i proporcioneu prou informació per localitzar els registres. Processarem les sol·licituds verificades d'acord amb la legislació aplicable, els requisits de seguretat i de prevenció d'abús.</p>
+    <p>Fem servir garanties tècniques i organitzatives raonables, però no es pot garantir cap emmagatzematge local, transmissió de xarxa o servei al núvol totalment segur.</p>
+
+    <h3>9. Proveïdors de serveis</h3>
+    <p>L'aplicació pot utilitzar l'App Store, StoreKit, HealthKit, iCloud, CloudKit, notificacions push i serveis d'Apple d'Apple, juntament amb serveis al núvol configurats pel desenvolupador per a l'emmagatzematge multimèdia i les funcions de backend necessàries. Cada proveïdor processa les dades segons les seves pròpies condicions i política de privadesa.</p>
+
+    <h3>10. Privacitat dels nens</h3>
+    <p>L'aplicació no s'adreça a menors de 13 anys i no recopila informació personal dels nens de manera conscient.</p>
+
+    <h3>11. Canvis</h3>
+    <p>Les actualitzacions d'aquesta política es publicaran en aquesta pàgina; la "Data d'entrada en vigor" a la part superior es revisarà en conseqüència.</p>
+
+    <h3>12. Contacte</h3>
+    <p>Preguntes? Envia un correu electrònic a <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="de" lang="de" class="section">
+    <h2>Datenschutzrichtlinie</h2>
+    <p class="meta">Datum des Inkrafttretens: 1. Oktober 2026</p>
+
+    <p>„Pumpa 练记“ (die „App“) wird von einem unabhängigen Entwickler entwickelt und gepflegt, der unter <strong>xpzeng001@gmail.com</strong> erreichbar ist. Wir nehmen Ihre Privatsphäre ernst. Diese Richtlinie erläutert, wie die App mit Ihren Daten umgeht.</p>
+
+    <h3>1. Was wir verarbeiten</h3>
+    <p>Die App enthält keine Analyse-, Tracking- oder Werbe-SDKs von Drittanbietern und wir verkaufen Ihre personenbezogenen Daten nicht.</p>
+    <p>Um Trainingsprotokollierung, Trainingspläne, Statistiken, Verlauf und Widgets bereitzustellen, verarbeitet die App Daten, die Sie eingeben oder generieren, einschließlich Trainingsaufzeichnungen, Trainingspläne, abgeschlossene Sätze, Körpermaße, Vorlieben, Abonnementstatus und Trainingsfotos oder Poster, die Sie hinzufügen möchten.</p>
+    <p>Sofern Sie sich nicht dafür entscheiden, diese bereitzustellen oder eine Funktion zu nutzen, die dies erfordert, fragt die App nicht nach Ihrem richtigen Namen, Ihrer Telefonnummer, Ihrer E-Mail-Adresse oder Ihrem genauen Standort.</p>
+
+    <h3>2. Apple Health (optional)</h3>
+    <p>Nachdem Sie die Erlaubnis erteilt haben, liest die App Trainings, Herzfrequenz, aktive Energie, Körpermasse und Ruheherzfrequenz von Apple Health, um den Trainingsverlauf zu organisieren, Gesundheitsmetriken anzuzeigen, Trainingsstatistiken zu erstellen und Körpertrends anzuzeigen. Die App schreibt keine Daten an Apple Health.</p>
+    <p>Die von Apple Health gelesenen Daten werden nur auf Ihrem Gerät gespeichert. Es wird nicht auf die Server des Entwicklers, CloudKit oder iCloud hochgeladen und nicht für Werbung, Marketing, Data Mining oder den Austausch mit Freunden verwendet. Sie können den Zugriff jederzeit in der Health-App oder in den Systemeinstellungen ändern oder widerrufen.</p>
+
+    <h3>3. Lokaler Speicher und iCloud-Synchronisierung</h3>
+    <p>Trainingsaufzeichnungen, Körpermaße und Präferenzen, die Sie direkt in Pumpa erstellen, werden standardmäßig lokal auf Ihrem Gerät gespeichert.</p>
+    <p>Wenn Sie ein Premium-Abonnement (Pro) haben, verwendet die App den <strong>iCloud Key-Value Store</strong> von Apple, um von Pumpa erstellte Trainingsaufzeichnungen und -einstellungen auf allen Geräten zu synchronisieren, die bei derselben Apple-ID angemeldet sind. Von Apple Health importierte Daten sind von der iCloud-Synchronisierung ausgeschlossen.</p>
+    <p>Diese Daten werden von Apple unter Ihrem iCloud-Konto gespeichert und verwaltet. Normalerweise liest der Entwickler Ihre privaten iCloud-Synchronisierungsinhalte nicht direkt, während Apple die Daten gemäß seinen eigenen Bedingungen und Datenschutzrichtlinien verarbeitet. Sie können iCloud unter <em>Einstellungen → Apple-ID → iCloud</em> deaktivieren.</p>
+
+    <h3>4. Kamera, Fotos und Posenerkennung</h3>
+    <p>Wenn Sie sich für einen Klimmzug, einen Liegestütz oder eine ähnliche Erkennungsherausforderung entscheiden, verarbeitet die App den Kamera-Feed auf Ihrem Gerät, um die Körperhaltung zu analysieren und Wiederholungen abzuschätzen. Live-Kamerabilder, die zur Erkennung verwendet werden, werden nicht auf die Server des Entwicklers hochgeladen, nur weil Sie die Posenerkennung verwenden.</p>
+    <p>Wenn Sie sich dafür entscheiden, ein Challenge-Video aufzunehmen oder ein Trainingsposter zu speichern, speichert die App diesen Inhalt nach Erhalt der Erlaubnis auf Ihrem Gerät oder in der Fotobibliothek. Die Erkennungsergebnisse dienen nur der Fitnessverfolgung und der Unterhaltung, können ungenau sein und stellen keine medizinische Diagnose oder professionelle Gesundheitsberatung dar.</p>
+
+    <h3>5. Trainingsmedien und vom Entwickler betriebener Cloud-Speicher</h3>
+    <p>Wenn Sie Trainingsfotos, Poster oder Challenge-Videos hinzufügen, teilen oder sichern möchten, lädt die App die von Ihnen ausgewählten Medien möglicherweise in den Cloud-Speicher hoch, der vom Entwickler oder einem Dienstanbieter betrieben wird, um sie in der App anzuzeigen, mit Freunden zu teilen, zu sichern und den Verlauf wiederherzustellen.</p>
+    <p>Uploads können die Mediendatei, den Dateityp, eine zugehörige Trainingskennung und für die Anzeige erforderliche Medienlinks enthalten. Wir verwenden Trainingsmedien oder Trainingsdaten nicht für Werbung, App-übergreifendes Tracking oder den Verkauf an Dritte.</p>
+    <p>Sie können das Hochladen von Medien vermeiden, indem Sie diese nicht hinzufügen oder teilen. Hochgeladene Inhalte bleiben so lange erhalten, wie sie zur Bereitstellung der entsprechenden Funktion benötigt werden. Sobald es nicht mehr benötigt wird oder Sie die Löschung beantragen, wird es gelöscht oder anonymisiert. Sicherheitssicherungen können jedoch bestehen bleiben, bis ein angemessener Rotationszyklus abgeschlossen ist.</p>
+
+    <h3>6. Verantwortlichkeit von Freunden und CloudKit (optional)</h3>
+    <p>Wenn Sie <strong>einen Freund hinzufügen</strong>, teilt die App Folgendes über die öffentliche CloudKit-Datenbank von Apple mit diesem Freund:</p>
+    <ul>
+      <li>Trainingsdatum, Dauer, verbrannte Kalorien und Name der Übungskategorie</li>
+      <li>Der <strong>Anzeigename</strong>, den Sie in der App festlegen (standardmäßig Ihr Gerätename; bearbeitbar unter <em>Extras → Freundschaftsaufsicht</em>; das sehen Freunde)</li>
+      <li>Trainingsfotos, Poster und Links zu verwandten Medien, die Sie zum Einchecken oder Teilen verwenden möchten</li>
+      <li>Wenn Sie auf die Schaltfläche „Freund erinnern“ tippen, wird eine Push-Benachrichtigung (mit Ihrem Anzeigenamen) an das Gerät dieses Freundes gesendet.</li>
+    </ul>
+    <p>Es sei denn, Sie platzieren es in einem Anzeigenamen, einer Notiz oder einem Medienelement, erfordert die App weder die Weitergabe Ihres echten Namens, Ihrer Telefonnummer, Ihrer E-Mail-Adresse, Ihrer Körpermaße oder Ihres Gewichts an Freunde noch absichtlich.</p>
+    <p>Identität verwendet die von Apple zugewiesene iCloud-Benutzerdatensatz-ID (CKUserRecordID). Diese Kennung allein verrät normalerweise nicht Ihre reale Identität. Der Entwickler kann jedoch Datensätze im CloudKit-Container der App über CloudKit-Tools anzeigen und verwalten, wenn er Support leistet, den Dienst aufrechterhält, Missbrauch bekämpft oder Gesetze einhält.</p>
+    <p>Das Entfernen eines Freundes stoppt zukünftiges Teilen und verhindert, dass dieser Freund neue Check-ins über die App sieht. Vorhandene CloudKit-Datensätze, Mediensicherungen oder Inhalte, die bereits auf einem anderen Gerät empfangen wurden, werden möglicherweise nicht automatisch oder sofort gelöscht. Kontaktieren Sie uns über die unten stehende E-Mail, um die Löschung zugehöriger Cloud-Inhalte anzufordern.</p>
+
+    <h3>7. In-App-Käufe und Abonnements</h3>
+    <p>Monatsabonnements, Jahresabonnements und lebenslange Freischaltungen werden von Apple über den App Store abgewickelt. Die App <strong>erhält Ihre Zahlungskartennummer oder Ihr Apple-ID-Passwort nicht</strong>; Es liest die von Apple bereitgestellten Kaufergebnisse und den Berechtigungsstatus, um zu bestimmen, ob Pro-Funktionen freigeschaltet werden sollten.</p>
+
+    <h3>8. Aufbewahrung, Löschung und Sicherheit</h3>
+    <p>Sie kontrollieren die lokal auf Ihrem Gerät gespeicherten Daten und können diese mithilfe der verfügbaren App-Steuerelemente oder durch Deinstallation der App löschen. Sie können iCloud-Daten über die iCloud-Systemeinstellungen verwalten. Öffentliche CloudKit-Datenbankaufzeichnungen und vom Entwickler betriebene Cloud-Medien werden so lange aufbewahrt, wie sie für Freundes-, Synchronisierungs-, Sicherungs-, Wiederherstellungs-, Sicherheits- und Streitbeilegungsfunktionen angemessen benötigt werden.</p>
+    <p>Um Fragen zu Inhalten zu stellen, die von von Entwicklern betriebenen Cloud-Diensten verarbeitet werden, oder deren Löschung zu beantragen, senden Sie eine E-Mail an <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> und geben Sie genügend Informationen an, um die Datensätze zu finden. Wir werden verifizierte Anfragen vorbehaltlich geltender Gesetze, Sicherheits- und Missbrauchspräventionsanforderungen bearbeiten.</p>
+    <p>Wir nutzen angemessene technische und organisatorische Sicherheitsvorkehrungen, aber keine lokale Speicherung, keine Netzwerkübertragung oder kein Cloud-Dienst kann vollständig sicher garantiert werden.</p>
+
+    <h3>9. Dienstleister</h3>
+    <p>Die App kann Apples App Store, StoreKit, HealthKit, iCloud, CloudKit, Push-Benachrichtigung und Fotos-Dienste sowie vom Entwickler konfigurierte Cloud-Dienste für die Medienspeicherung und notwendige Backend-Funktionen nutzen. Jeder Anbieter verarbeitet Daten gemäß seinen eigenen Bedingungen und Datenschutzrichtlinien.</p>
+
+    <h3>10. Privatsphäre der Kinder</h3>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren und erfasst nicht wissentlich personenbezogene Daten von Kindern.</p>
+
+    <h3>11. Änderungen</h3>
+    <p>Aktualisierungen dieser Richtlinie werden auf dieser Seite veröffentlicht. Das „Datum des Inkrafttretens“ oben wird entsprechend geändert.</p>
+
+    <h3>12. Kontakt</h3>
+    <p>Fragen? Senden Sie eine E-Mail an <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="es" lang="es" class="section">
+    <h2>Política de privacidad</h2>
+    <p class="meta">Fecha de entrada en vigor: 1 de octubre de 2026</p>
+
+    <p>"Pumpa 练记" (la "Aplicación") es desarrollada y mantenida por un desarrollador independiente al que se puede contactar en <strong>xpzeng001@gmail.com</strong>. Nos tomamos en serio su privacidad. Esta política explica cómo la aplicación maneja sus datos.</p>
+
+    <h3>1. Qué procesamos</h3>
+    <p>La aplicación no contiene SDK de análisis, seguimiento o publicidad de terceros, y no vendemos sus datos personales.</p>
+    <p>Para proporcionar registros de entrenamiento, planes de entrenamiento, estadísticas, historial y widgets, la aplicación procesa los datos que usted ingresa o genera, incluidos registros de entrenamiento, planes de entrenamiento, series completadas, medidas corporales, preferencias, estado de suscripción y fotografías o carteles de entrenamiento que elija agregar.</p>
+    <p>A menos que elija proporcionarlo o utilizar una función que lo requiera, la aplicación no solicita su nombre real, número de teléfono, dirección de correo electrónico ni ubicación precisa.</p>
+
+    <h3>2. Salud de Apple (opcional)</h3>
+    <p>Después de otorgar permiso, la aplicación lee los entrenamientos, la frecuencia cardíaca, la energía activa, la masa corporal y la frecuencia cardíaca en reposo de Apple Health para organizar el historial de entrenamiento, mostrar métricas de salud, generar estadísticas de entrenamiento y mostrar tendencias corporales. La aplicación no escribe datos en Apple Health.</p>
+    <p>Los datos leídos de Apple Health se almacenan únicamente en su dispositivo. No se carga en los servidores del desarrollador, CloudKit o iCloud, y no se utiliza para publicidad, marketing, extracción de datos ni para compartir con amigos. Puedes cambiar o revocar el acceso en cualquier momento en la aplicación Salud o en la configuración del sistema.</p>
+
+    <h3>3. Almacenamiento local y sincronización con iCloud</h3>
+    <p>Los registros de entrenamiento, las medidas corporales y las preferencias que creas directamente en Pumpa se almacenan localmente en tu dispositivo de forma predeterminada.</p>
+    <p>Si tiene una suscripción Premium (Pro), la aplicación utiliza la <strong>iCloud Key-Value Store</strong> de Apple para sincronizar los registros y configuraciones de entrenamiento creados por Pumpa en todos los dispositivos que hayan iniciado sesión con el mismo ID de Apple. Los datos importados desde Apple Health están excluidos de la sincronización de iCloud.</p>
+    <p>Apple almacena y administra estos datos en su cuenta de iCloud. Normalmente, el desarrollador no lee directamente el contenido privado de sincronización de iCloud, mientras que Apple procesa los datos según sus propios términos y política de privacidad. Puede desactivar iCloud en <em>Configuración → ID de Apple → iCloud</em>.</p>
+
+    <h3>4. Cámara, fotos y reconocimiento de pose</h3>
+    <p>Cuando eliges utilizar un desafío de reconocimiento de dominadas, flexiones o similar, la aplicación procesa la transmisión de la cámara en tu dispositivo para analizar la postura del cuerpo y estimar las repeticiones. Los fotogramas de cámara en vivo utilizados para el reconocimiento no se cargan en los servidores del desarrollador simplemente porque utilizas el reconocimiento de pose.</p>
+    <p>Si elige grabar un video de desafío o guardar un póster de entrenamiento, la aplicación guarda ese contenido en su dispositivo o biblioteca de fotos después de recibir el permiso. Los resultados del reconocimiento son solo para seguimiento del estado físico y entretenimiento, pueden ser inexactos y no son diagnósticos médicos ni consejos de salud profesionales.</p>
+
+    <h3>5. Medios de entrenamiento y almacenamiento en la nube operado por desarrolladores</h3>
+    <p>Cuando elige agregar, compartir o hacer una copia de seguridad de fotos de entrenamiento, carteles o videos de desafíos, la aplicación puede cargar los medios que seleccionó en el almacenamiento en la nube operado por el desarrollador o un proveedor de servicios para visualización en la aplicación, compartir con amigos, realizar copias de seguridad y recuperar el historial.</p>
+    <p>Las cargas pueden incluir el archivo multimedia, el tipo de archivo, un identificador de entrenamiento relacionado y enlaces multimedia necesarios para su visualización. No utilizamos medios ni datos de entrenamiento para publicidad, seguimiento entre aplicaciones ni venta a terceros.</p>
+    <p>Puedes evitar cargar medios si no los agregas ni los compartes. El contenido cargado se conserva mientras sea necesario para proporcionar la función relevante. Una vez que ya no sea necesario o usted solicite su eliminación, se eliminará o se anonimizará, aunque las copias de seguridad de seguridad pueden permanecer hasta que completen un ciclo de rotación razonable.</p>
+
+    <h3>6. Responsabilidad de amigos y CloudKit (opcional)</h3>
+    <p>Si <strong>agregas un amigo</strong>, la aplicación comparte lo siguiente con ese amigo a través de la base de datos pública CloudKit de Apple:</p>
+    <ul>
+      <li>Fecha del entrenamiento, duración, calorías quemadas y nombre de la categoría de ejercicio</li>
+      <li>El <strong>nombre para mostrar</strong> que configuraste dentro de la aplicación (el valor predeterminado es el nombre de tu dispositivo; se puede editar en <em>Herramientas → Supervisión mutua de amigos</em>; esto es lo que ven los amigos)</li>
+      <li>Fotos de entrenamiento, carteles y enlaces de medios relacionados que elijas usar para registrarlos o compartirlos</li>
+      <li>Cuando tocas el botón "Recordarle a tu amigo", se envía una notificación automática al dispositivo de ese amigo (que contiene tu nombre para mostrar)</li>
+    </ul>
+    <p>A menos que la coloque en un nombre para mostrar, una nota o un elemento multimedia, la aplicación no requiere ni comparte intencionalmente su nombre real, número de teléfono, dirección de correo electrónico, medidas corporales o peso con amigos.</p>
+    <p>La identidad utiliza el identificador de registro de usuario de iCloud (CKUserRecordID) asignado por Apple. Este identificador normalmente no revela por sí solo su identidad en el mundo real. Sin embargo, el desarrollador puede ver y administrar registros en el contenedor CloudKit de la aplicación a través de las herramientas de CloudKit al brindar soporte, mantener el servicio, abordar abusos o cumplir con la ley.</p>
+    <p>Eliminar a un amigo impide que se comparta contenido en el futuro y evita que ese amigo vea nuevos registros a través de la aplicación. Es posible que los registros de CloudKit existentes, las copias de seguridad de medios o el contenido ya recibido en otro dispositivo no se eliminen de forma automática o inmediata. Contáctenos usando el correo electrónico a continuación para solicitar la eliminación del contenido relacionado en la nube.</p>
+
+    <h3>7. Compras y suscripciones dentro de la aplicación</h3>
+    <p>Apple procesa las suscripciones mensuales, las suscripciones anuales y los desbloqueos de por vida a través de la App Store. La aplicación <strong>no recibe su número de tarjeta de pago ni su contraseña de ID de Apple</strong>; lee los resultados de la compra y el estado de los derechos proporcionados por Apple para determinar si las funciones Pro deben desbloquearse.</p>
+
+    <h3>8. Retención, eliminación y seguridad</h3>
+    <p>Usted controla los datos almacenados localmente en su dispositivo y puede eliminarlos usando los controles de la aplicación disponibles o desinstalando la aplicación. Puede administrar los datos de iCloud a través de la configuración de iCloud del sistema. Los registros de la base de datos pública de CloudKit y los medios en la nube operados por desarrolladores se conservan mientras sean razonablemente necesarios para funciones de amigo, sincronización, copia de seguridad, recuperación, seguridad y resolución de disputas.</p>
+    <p>Para preguntar o solicitar la eliminación de contenido manejado por servicios en la nube operados por desarrolladores, envíe un correo electrónico a <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> y proporcione suficiente información para localizar los registros. Procesaremos las solicitudes verificadas sujetas a las leyes aplicables, la seguridad y los requisitos de prevención de abusos.</p>
+    <p>Utilizamos medidas de seguridad técnicas y organizativas razonables, pero no se puede garantizar que el almacenamiento local, la transmisión de red o el servicio en la nube sean completamente seguros.</p>
+
+    <h3>9. Proveedores de servicios</h3>
+    <p>La aplicación puede utilizar los servicios App Store, StoreKit, HealthKit, iCloud, CloudKit, notificaciones push y Fotos de Apple, junto con servicios en la nube configurados por el desarrollador para el almacenamiento de medios y las funciones de backend necesarias. Cada proveedor procesa los datos bajo sus propios términos y política de privacidad.</p>
+
+    <h3>10. Privacidad de los niños</h3>
+    <p>La aplicación no está dirigida a niños menores de 13 años y no recopila intencionadamente información personal de los niños.</p>
+
+    <h3>11. Cambios</h3>
+    <p>Las actualizaciones de esta política se publicarán en esta página; la "Fecha de entrada en vigor" en la parte superior se revisará en consecuencia.</p>
+
+    <h3>12. Contacto</h3>
+    <p>¿Preguntas? Envíe un correo electrónico a <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="fr" lang="fr" class="section">
+    <h2>Politique de confidentialité</h2>
+    <p class="meta">Date d'entrée en vigueur : 1er octobre 2026</p>
+
+    <p>"Pumpa 练记" (l'"Application") est développé et maintenu par un développeur indépendant joignable à <strong>xpzeng001@gmail.com</strong>. Nous prenons votre vie privée au sérieux. Cette politique explique comment l'application gère vos données.</p>
+
+    <h3>1. Ce que nous traitons</h3>
+    <p>L'application ne contient aucun SDK tiers d'analyse, de suivi ou de publicité, et nous ne vendons pas vos données personnelles.</p>
+    <p>Pour fournir un journal d'entraînement, des plans d'entraînement, des statistiques, un historique et des widgets, l'application traite les données que vous saisissez ou générez, y compris les enregistrements d'entraînement, les plans d'entraînement, les séries terminées, les mensurations, les préférences, l'état de l'abonnement et les photos ou affiches d'entraînement que vous choisissez d'ajouter.</p>
+    <p>Sauf si vous choisissez de le fournir ou d'utiliser une fonctionnalité qui le nécessite, l'application ne vous demande pas votre vrai nom, votre numéro de téléphone, votre adresse e-mail ou votre emplacement précis.</p>
+
+    <h3>2. Apple Santé (facultatif)</h3>
+    <p>Une fois votre autorisation accordée, l'application lit les entraînements, la fréquence cardiaque, l'énergie active, la masse corporelle et la fréquence cardiaque au repos d'Apple Health pour organiser l'historique des entraînements, afficher les mesures de santé, générer des statistiques d'entraînement et afficher les tendances corporelles. L'application n'écrit pas de données dans Apple Health.</p>
+    <p>Les données lues depuis Apple Health sont stockées uniquement sur votre appareil. Il n'est pas téléchargé sur les serveurs du développeur, CloudKit ou iCloud, et n'est pas utilisé à des fins de publicité, de marketing, d'exploration de données ou de partage avec des amis. Vous pouvez modifier ou révoquer l'accès à tout moment dans l'application Santé ou dans les paramètres système.</p>
+
+    <h3>3. Stockage local et synchronisation iCloud</h3>
+    <p>Les enregistrements d'entraînement, les mensurations et les préférences que vous créez directement dans Pumpa sont stockés localement sur votre appareil par défaut.</p>
+    <p>Si vous disposez d'un abonnement Premium (Pro), l'application utilise le <strong>iCloud Key-Value Store</strong> d'Apple pour synchroniser les enregistrements et les paramètres d'entraînement créés par Pumpa sur tous les appareils connectés au même identifiant Apple. Les données importées depuis Apple Health sont exclues de la synchronisation iCloud.</p>
+    <p>Ces données sont stockées et gérées par Apple sous votre compte iCloud. Le développeur ne lit généralement pas directement votre contenu de synchronisation iCloud privé, tandis qu'Apple traite les données selon ses propres conditions et politique de confidentialité. Vous pouvez désactiver iCloud sous <em>Paramètres → Identifiant Apple → iCloud</em>.</p>
+
+    <h3>4. Appareil photo, photos et reconnaissance de pose</h3>
+    <p>Lorsque vous choisissez d'utiliser un défi de traction, de pompes ou de reconnaissance similaire, l'application traite le flux de la caméra sur votre appareil pour analyser la pose du corps et estimer les répétitions. Les images de caméra en direct utilisées pour la reconnaissance ne sont pas téléchargées sur les serveurs du développeur simplement parce que vous utilisez la reconnaissance de pose.</p>
+    <p>Si vous choisissez d'enregistrer une vidéo de défi ou de sauvegarder une affiche d'entraînement, l'application enregistre ce contenu sur votre appareil ou dans votre bibliothèque de photos après avoir reçu l'autorisation. Les résultats de la reconnaissance sont uniquement destinés au suivi de la condition physique et au divertissement. Ils peuvent être inexacts et ne constituent pas des diagnostics médicaux ni des conseils de santé professionnels.</p>
+
+    <h3>5. Supports d'entraînement et stockage cloud géré par les développeurs</h3>
+    <p>Lorsque vous choisissez d'ajouter, de partager ou de sauvegarder des photos d'entraînement, des affiches ou des vidéos de défi, l'application peut télécharger les médias que vous avez sélectionnés sur un stockage cloud exploité par le développeur ou un fournisseur de services pour l'affichage dans l'application, le partage entre amis, la sauvegarde et la récupération de l'historique.</p>
+    <p>Les téléchargements peuvent inclure le fichier multimédia, le type de fichier, un identifiant d'entraînement associé et les liens multimédias nécessaires à l'affichage. Nous n'utilisons pas les médias d'entraînement ni les données d'entraînement à des fins publicitaires, de suivi multi-applications ou de vente à des tiers.</p>
+    <p>Vous pouvez éviter de télécharger des médias en ne les ajoutant pas ou en ne les partageant pas. Le contenu téléchargé est conservé tant qu'il est nécessaire pour fournir la fonctionnalité pertinente. Une fois qu'il n'est plus nécessaire ou que vous demandez sa suppression, il sera supprimé ou anonymisé, bien que les sauvegardes de sécurité puissent rester jusqu'à ce qu'elles terminent un cycle de rotation raisonnable.</p>
+
+    <h3>6. Responsabilité des amis et CloudKit (facultatif)</h3>
+    <p>Si vous <strong>ajoutez un ami</strong>, l'application partage les éléments suivants avec cet ami via la base de données publique CloudKit d'Apple :</p>
+    <ul>
+      <li>Date de l'entraînement, durée, calories brûlées et nom de la catégorie d'exercice</li>
+      <li>Le <strong>nom d'affichage</strong> que vous avez défini dans l'application (par défaut, le nom de votre appareil ; modifiable sous <em>Outils → Supervision mutuelle entre amis</em> ; c'est ce que voient vos amis)</li>
+      <li>Photos d'entraînement, affiches et liens multimédias associés que vous choisissez d'utiliser pour un enregistrement ou un partage</li>
+      <li>Lorsque vous appuyez sur le bouton "Rappeler à votre ami", une notification push est envoyée à l'appareil de cet ami (contenant votre nom d'affichage)</li>
+    </ul>
+    <p>À moins que vous ne le placiez dans un nom d'affichage, une note ou un élément multimédia, l'application n'exige pas et ne partage pas intentionnellement votre vrai nom, votre numéro de téléphone, votre adresse e-mail, vos mensurations ou votre poids avec des amis.</p>
+    <p>L'identité utilise l'identifiant d'enregistrement utilisateur iCloud (CKUserRecordID) attribué par Apple. Cet identifiant ne révèle généralement pas votre identité réelle à lui seul. Cependant, le développeur peut afficher et gérer les enregistrements dans le conteneur CloudKit de l'application via les outils CloudKit lorsqu'il fournit une assistance, maintient le service, traite des abus ou se conforme à la loi.</p>
+    <p>La suppression d'un ami arrête le partage futur et empêche cet ami de consulter les nouveaux enregistrements via l'application. Les enregistrements CloudKit existants, les sauvegardes multimédias ou le contenu déjà reçu sur un autre appareil ne peuvent pas être supprimés automatiquement ou immédiatement. Contactez-nous en utilisant l'e-mail ci-dessous pour demander la suppression du contenu cloud associé.</p>
+
+    <h3>7. Achats et abonnements intégrés</h3>
+    <p>Les abonnements mensuels, les abonnements annuels et les déverrouillages à vie sont traités par Apple via l'App Store. L'application <strong>ne reçoit pas votre numéro de carte de paiement ni le mot de passe de votre identifiant Apple</strong> ; il lit les résultats d'achat et l'état des droits fournis par Apple pour déterminer si les fonctionnalités Pro doivent être déverrouillées.</p>
+
+    <h3>8. Conservation, suppression et sécurité</h3>
+    <p>Vous contrôlez les données stockées localement sur votre appareil et pouvez les supprimer à l'aide des commandes d'application disponibles ou en désinstallant l'application. Vous pouvez gérer les données iCloud via les paramètres système iCloud. Les enregistrements de la base de données publique CloudKit et les médias cloud exploités par les développeurs sont conservés tant que cela est raisonnablement nécessaire pour les fonctions d'ami, de synchronisation, de sauvegarde, de récupération, de sécurité et de résolution des litiges.</p>
+    <p>Pour poser des questions ou demander la suppression d'un contenu géré par les services cloud exploités par les développeurs, envoyez un e-mail à <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> et fournissez suffisamment d'informations pour localiser les enregistrements. Nous traiterons les demandes vérifiées sous réserve des lois applicables, des exigences de sécurité et de prévention des abus.</p>
+    <p>Nous utilisons des mesures de protection techniques et organisationnelles raisonnables, mais aucun stockage local, transmission réseau ou service cloud ne peut être garanti complètement sécurisé.</p>
+
+    <h3>9. Fournisseurs de services</h3>
+    <p>L'application peut utiliser les services App Store, StoreKit, HealthKit, iCloud, CloudKit, notifications push et Photos d'Apple, ainsi que les services cloud configurés par le développeur pour le stockage multimédia et les fonctions backend nécessaires. Chaque fournisseur traite les données selon ses propres conditions et politique de confidentialité.</p>
+
+    <h3>10. Vie privée des enfants</h3>
+    <p>L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte pas sciemment d'informations personnelles sur les enfants.</p>
+
+    <h3>11. Modifications</h3>
+    <p>Les mises à jour de cette politique seront publiées sur cette page ; la "Date d'entrée en vigueur" en haut sera révisée en conséquence.</p>
+
+    <h3>12. Contacter</h3>
+    <p>Des questions ? Envoyez un e-mail à <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="hi" lang="hi" class="section">
+    <h2>गोपनीयता नीति</h2>
+    <p class="meta">प्रभावी तिथि: 1 अक्टूबर, 2026</p>
+
+    <p>"पम्पा 练记" ("ऐप") एक स्वतंत्र डेवलपर द्वारा विकसित और रखरखाव किया जाता है, जो <strong>xpzeng001@gmail.com</strong> पर पहुंच सकता है। हम आपकी गोपनीयता को गंभीरता से लेते हैं। यह नीति बताती है कि ऐप आपके डेटा को कैसे प्रबंधित करता है।</p>
+
+    <h3>1. हम क्या प्रोसेस करते हैं</h3>
+    <p>ऐप में कोई तृतीय-पक्ष विश्लेषण, ट्रैकिंग या विज्ञापन SDK नहीं है, और हम आपका व्यक्तिगत डेटा नहीं बेचते हैं।</p>
+    <p>वर्कआउट लॉगिंग, प्रशिक्षण योजनाएं, आंकड़े, इतिहास और विजेट प्रदान करने के लिए, ऐप आपके द्वारा दर्ज या उत्पन्न किए गए डेटा को संसाधित करता है, जिसमें वर्कआउट रिकॉर्ड, प्रशिक्षण योजनाएं, पूर्ण सेट, शरीर माप, प्राथमिकताएं, सदस्यता स्थिति और आपके द्वारा जोड़े जाने वाले वर्कआउट फ़ोटो या पोस्टर शामिल हैं।</p>
+    <p>जब तक आप इसे प्रदान करना या ऐसी सुविधा का उपयोग करना नहीं चुनते जिसके लिए इसकी आवश्यकता है, ऐप आपका वास्तविक नाम, फ़ोन नंबर, ईमेल पता या सटीक स्थान नहीं पूछता है।</p>
+
+    <h3>2. एप्पल स्वास्थ्य (वैकल्पिक)</h3>
+    <p>आपके अनुमति देने के बाद, ऐप वर्कआउट इतिहास को व्यवस्थित करने, स्वास्थ्य मेट्रिक्स प्रदर्शित करने, वर्कआउट आंकड़े तैयार करने और शरीर के रुझान दिखाने के लिए ऐप्पल हेल्थ से वर्कआउट, हृदय गति, सक्रिय ऊर्जा, शरीर द्रव्यमान और आराम करने वाली हृदय गति को पढ़ता है। ऐप ऐप्पल हेल्थ को डेटा नहीं लिखता है।</p>
+    <p>Apple हेल्थ से पढ़ा गया डेटा केवल आपके डिवाइस पर संग्रहीत किया जाता है। इसे डेवलपर के सर्वर, क्लाउडकिट या आईक्लाउड पर अपलोड नहीं किया जाता है और इसका उपयोग विज्ञापन, मार्केटिंग, डेटा माइनिंग या दोस्तों के साथ साझा करने के लिए नहीं किया जाता है। आप हेल्थ ऐप या सिस्टम सेटिंग्स में किसी भी समय एक्सेस को बदल या रद्द कर सकते हैं।</p>
+
+    <h3>3. स्थानीय भंडारण और iCloud सिंक</h3>
+    <p>आपके द्वारा सीधे पंपा में बनाए गए वर्कआउट रिकॉर्ड, शारीरिक माप और प्राथमिकताएं डिफ़ॉल्ट रूप से आपके डिवाइस पर स्थानीय रूप से संग्रहीत की जाती हैं।</p>
+    <p>यदि आपके पास प्रीमियम (प्रो) सदस्यता है, तो ऐप एक ही ऐप्पल आईडी में साइन इन किए गए डिवाइसों में पंपा-निर्मित वर्कआउट रिकॉर्ड और सेटिंग्स को सिंक करने के लिए ऐप्पल के <strong>आईक्लाउड की-वैल्यू स्टोर</strong> का उपयोग करता है। Apple हेल्थ से आयातित डेटा को iCloud सिंक से बाहर रखा गया है।</p>
+    <p>यह डेटा Apple द्वारा आपके iCloud खाते के अंतर्गत संग्रहीत और प्रबंधित किया जाता है। डेवलपर आमतौर पर आपकी निजी iCloud सिंक सामग्री को सीधे नहीं पढ़ता है, जबकि Apple अपनी शर्तों और गोपनीयता नीति के तहत डेटा संसाधित करता है। आप <em>सेटिंग्स → Apple ID → iCloud</em> के अंतर्गत iCloud को अक्षम कर सकते हैं।</p>
+
+    <h3>4. कैमरा, फ़ोटो और मुद्रा पहचान</h3>
+    <p>जब आप पुल-अप, पुश-अप या इसी तरह की पहचान चुनौती का उपयोग करना चुनते हैं, तो ऐप शरीर की मुद्रा का विश्लेषण करने और पुनरावृत्ति का अनुमान लगाने के लिए आपके डिवाइस पर कैमरा फ़ीड को संसाधित करता है। पहचान के लिए उपयोग किए जाने वाले लाइव कैमरा फ़्रेम केवल इसलिए डेवलपर के सर्वर पर अपलोड नहीं किए जाते क्योंकि आप पोज़ पहचान का उपयोग करते हैं।</p>
+    <p>यदि आप कोई चुनौती वीडियो रिकॉर्ड करना या वर्कआउट पोस्टर सहेजना चुनते हैं, तो ऐप अनुमति प्राप्त करने के बाद उस सामग्री को आपके डिवाइस या फ़ोटो लाइब्रेरी में सहेजता है। मान्यता परिणाम केवल फिटनेस ट्रैकिंग और मनोरंजन के लिए हैं, गलत हो सकते हैं, और चिकित्सा निदान या पेशेवर स्वास्थ्य सलाह नहीं हैं।</p>
+
+    <h3>5. वर्कआउट मीडिया और डेवलपर द्वारा संचालित क्लाउड स्टोरेज</h3>
+    <p>जब आप वर्कआउट फ़ोटो, पोस्टर या चैलेंज वीडियो जोड़ना, साझा करना या बैकअप लेना चुनते हैं, तो ऐप आपके द्वारा चुने गए मीडिया को इन-ऐप डिस्प्ले, मित्र साझाकरण, बैकअप और इतिहास पुनर्प्राप्ति के लिए डेवलपर या सेवा प्रदाता द्वारा संचालित क्लाउड स्टोरेज पर अपलोड कर सकता है।</p>
+    <p>अपलोड में मीडिया फ़ाइल, फ़ाइल प्रकार, संबंधित वर्कआउट पहचानकर्ता और प्रदर्शन के लिए आवश्यक मीडिया लिंक शामिल हो सकते हैं। हम विज्ञापन, क्रॉस-ऐप ट्रैकिंग, या तीसरे पक्ष को बिक्री के लिए वर्कआउट मीडिया या वर्कआउट डेटा का उपयोग नहीं करते हैं।</p>
+    <p>आप मीडिया को जोड़कर या साझा न करके उसे अपलोड करने से बच सकते हैं। अपलोड की गई सामग्री को प्रासंगिक सुविधा प्रदान करने की आवश्यकता होने पर बरकरार रखा जाता है। जब इसकी आवश्यकता नहीं रह जाती है या आप हटाने का अनुरोध करते हैं, तो इसे हटा दिया जाएगा या अज्ञात कर दिया जाएगा, हालांकि सुरक्षा बैकअप तब तक बने रह सकते हैं जब तक कि वे एक उचित रोटेशन चक्र पूरा नहीं कर लेते।</p>
+
+    <h3>6. मित्र जवाबदेही और क्लाउडकिट (वैकल्पिक)</h3>
+    <p>यदि आप <strong>किसी मित्र को जोड़ते हैं</strong>, तो ऐप ऐप्पल के क्लाउडकिट सार्वजनिक डेटाबेस के माध्यम से उस मित्र के साथ निम्नलिखित साझा करता है:</p>
+    <ul>
+      <li>कसरत की तारीख, अवधि, खर्च की गई कैलोरी, और व्यायाम श्रेणी का नाम</li>
+      <li>आपने ऐप के अंदर जो <strong>डिस्प्ले नाम</strong> सेट किया है (डिफ़ॉल्ट रूप से यह आपके डिवाइस का नाम है; <em>टूल्स → फ्रेंड म्युचुअल सुपरविजन</em> के तहत संपादन योग्य है; दोस्त यही देखते हैं)</li>
+      <li>वर्कआउट फ़ोटो, पोस्टर और संबंधित मीडिया लिंक जिन्हें आप चेक-इन या साझा करने के लिए उपयोग करना चुनते हैं</li>
+      <li>जब आप "अपने दोस्त को याद दिलाएं" बटन पर टैप करते हैं, तो उस दोस्त के डिवाइस पर एक पुश नोटिफिकेशन भेजा जाता है (जिसमें आपका डिस्प्ले नाम होता है)</li>
+    </ul>
+    <p>जब तक आप इसे डिस्प्ले नाम, नोट या मीडिया आइटम में नहीं रखते, ऐप को आपका वास्तविक नाम, फोन नंबर, ईमेल पता, शरीर का माप या वजन दोस्तों के साथ साझा करने की आवश्यकता नहीं है या जानबूझकर साझा नहीं करता है।</p>
+    <p>पहचान Apple द्वारा निर्दिष्ट iCloud उपयोगकर्ता रिकॉर्ड पहचानकर्ता (CKUserRecordID) का उपयोग करती है। यह पहचानकर्ता आमतौर पर आपकी वास्तविक दुनिया की पहचान को स्वयं प्रकट नहीं करता है। हालाँकि, डेवलपर समर्थन प्रदान करते समय, सेवा बनाए रखते हुए, दुरुपयोग को संबोधित करते हुए, या कानून का अनुपालन करते समय क्लाउडकिट टूल के माध्यम से ऐप के क्लाउडकिट कंटेनर में रिकॉर्ड देख और प्रबंधित कर सकता है।</p>
+    <p>किसी मित्र को हटाने से भविष्य में साझाकरण बंद हो जाता है और वह मित्र ऐप के माध्यम से नए चेक-इन देखने से रोकता है। मौजूदा क्लाउडकिट रिकॉर्ड, मीडिया बैकअप, या किसी अन्य डिवाइस पर पहले से प्राप्त सामग्री को स्वचालित रूप से या तुरंत हटाया नहीं जा सकता है। संबंधित क्लाउड सामग्री को हटाने का अनुरोध करने के लिए नीचे दिए गए ईमेल का उपयोग करके हमसे संपर्क करें।</p>
+
+    <h3>7. इन-ऐप खरीदारी और सदस्यताएँ</h3>
+    <p>मासिक सदस्यता, वार्षिक सदस्यता और आजीवन अनलॉक को ऐप्पल द्वारा ऐप स्टोर के माध्यम से संसाधित किया जाता है। ऐप को <strong>आपका भुगतान कार्ड नंबर या ऐप्पल आईडी पासवर्ड प्राप्त नहीं होता है</strong>; यह यह निर्धारित करने के लिए कि प्रो सुविधाओं को अनलॉक किया जाना चाहिए या नहीं, ऐप्पल द्वारा प्रदान किए गए खरीद परिणाम और पात्रता स्थिति को पढ़ता है।</p>
+
+    <h3>8. अवधारण, विलोपन, और सुरक्षा</h3>
+    <p>आप अपने डिवाइस पर स्थानीय रूप से संग्रहीत डेटा को नियंत्रित करते हैं और उपलब्ध ऐप नियंत्रणों का उपयोग करके या ऐप को अनइंस्टॉल करके इसे हटा सकते हैं। आप सिस्टम iCloud सेटिंग्स के माध्यम से iCloud डेटा प्रबंधित कर सकते हैं। क्लाउडकिट सार्वजनिक-डेटाबेस रिकॉर्ड और डेवलपर-संचालित क्लाउड मीडिया को मित्रता, सिंक, बैकअप, पुनर्प्राप्ति, सुरक्षा और विवाद-समाधान कार्यों के लिए उचित रूप से आवश्यक होने पर बनाए रखा जाता है।</p>
+    <p>डेवलपर द्वारा संचालित क्लाउड सेवाओं द्वारा प्रबंधित सामग्री को हटाने के बारे में पूछने या अनुरोध करने के लिए, <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> पर ईमेल करें और रिकॉर्ड का पता लगाने के लिए पर्याप्त जानकारी प्रदान करें। हम लागू कानून, सुरक्षा और दुरुपयोग-रोकथाम आवश्यकताओं के अधीन सत्यापित अनुरोधों पर कार्रवाई करेंगे।</p>
+    <p>हम उचित तकनीकी और संगठनात्मक सुरक्षा उपायों का उपयोग करते हैं, लेकिन किसी भी स्थानीय भंडारण, नेटवर्क ट्रांसमिशन, या क्लाउड सेवा की पूरी तरह से सुरक्षा की गारंटी नहीं दी जा सकती है।</p>
+
+    <h3>9. सेवा प्रदाता</h3>
+    <p>ऐप ऐप्पल के ऐप स्टोर, स्टोरकिट, हेल्थकिट, आईक्लाउड, क्लाउडकिट, पुश नोटिफिकेशन और फोटो सेवाओं के साथ-साथ मीडिया स्टोरेज और आवश्यक बैकएंड कार्यों के लिए डेवलपर द्वारा कॉन्फ़िगर की गई क्लाउड सेवाओं का उपयोग कर सकता है। प्रत्येक प्रदाता अपनी शर्तों और गोपनीयता नीति के तहत डेटा संसाधित करता है।</p>
+
+    <h3>10. बच्चों की गोपनीयता</h3>
+    <p>ऐप 13 वर्ष से कम उम्र के बच्चों के लिए नहीं है और यह जानबूझकर बच्चों की व्यक्तिगत जानकारी एकत्र नहीं करता है।</p>
+
+    <h3>11. परिवर्तन</h3>
+    <p>इस नीति के अपडेट इस पेज पर पोस्ट किए जाएंगे; शीर्ष पर "प्रभावी तिथि" को तदनुसार संशोधित किया जाएगा।</p>
+
+    <h3>12. संपर्क करें</h3>
+    <p>प्रश्न? ईमेल <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="it" lang="it" class="section">
+    <h2>Informativa sulla privacy</h2>
+    <p class="meta">Data di entrata in vigore: 1 ottobre 2026</p>
+
+    <p>"Pumpa 练记" (l'"App") è sviluppata e gestita da uno sviluppatore indipendente raggiungibile all'indirizzo <strong>xpzeng001@gmail.com</strong>. Prendiamo sul serio la tua privacy. Questa politica spiega come l'app gestisce i tuoi dati.</p>
+
+    <h3>1. Cosa elaboriamo</h3>
+    <p>L'app non contiene analisi, monitoraggio o SDK pubblicitari di terze parti e non vendiamo i tuoi dati personali.</p>
+    <p>Per fornire registrazione degli allenamenti, piani di allenamento, statistiche, cronologia e widget, l'app elabora i dati immessi o generati dall'utente, inclusi registri degli allenamenti, piani di allenamento, serie completate, misurazioni del corpo, preferenze, stato dell'abbonamento e foto o poster degli allenamenti che scegli di aggiungere.</p>
+    <p>A meno che tu non scelga di fornirlo o di utilizzare una funzionalità che lo richiede, l'app non richiede il tuo vero nome, numero di telefono, indirizzo email o posizione precisa.</p>
+
+    <h3>2. Apple Salute (facoltativo)</h3>
+    <p>Dopo aver concesso l'autorizzazione, l'app legge allenamenti, frequenza cardiaca, energia attiva, massa corporea e frequenza cardiaca a riposo da Apple Health per organizzare la cronologia degli allenamenti, visualizzare metriche di salute, generare statistiche sugli allenamenti e mostrare le tendenze del corpo. L'app non scrive dati su Apple Health.</p>
+    <p>I dati letti da Apple Health vengono archiviati solo sul tuo dispositivo. Non viene caricato sui server dello sviluppatore, CloudKit o iCloud e non viene utilizzato per pubblicità, marketing, data mining o condivisione con gli amici. Puoi modificare o revocare l'accesso in qualsiasi momento nell'app Salute o nelle impostazioni di sistema.</p>
+
+    <h3>3. Archiviazione locale e sincronizzazione iCloud</h3>
+    <p>I record di allenamento, le misurazioni del corpo e le preferenze che crei direttamente in Pumpa vengono archiviati localmente sul tuo dispositivo per impostazione predefinita.</p>
+    <p>Se hai un abbonamento Premium (Pro), l'app utilizza <strong>iCloud Key-Value Store</strong> di Apple per sincronizzare i record e le impostazioni degli allenamenti creati da Pumpa su tutti i dispositivi su cui è stato effettuato l'accesso allo stesso ID Apple. I dati importati da Apple Health sono esclusi dalla sincronizzazione con iCloud.</p>
+    <p>Questi dati vengono archiviati e gestiti da Apple nel tuo account iCloud. Lo sviluppatore normalmente non legge direttamente il contenuto privato della sincronizzazione di iCloud, mentre Apple elabora i dati secondo i propri termini e la propria informativa sulla privacy. Puoi disattivare iCloud in <em>Impostazioni → ID Apple → iCloud</em>.</p>
+
+    <h3>4. Riconoscimento di fotocamera, foto e posa</h3>
+    <p>Quando scegli di utilizzare una sfida di riconoscimento di trazioni, flessioni o simili, l'app elabora il feed della fotocamera sul tuo dispositivo per analizzare la posa del corpo e stimare le ripetizioni. I fotogrammi della telecamera live utilizzati per il riconoscimento non vengono caricati sui server dello sviluppatore semplicemente perché utilizzi il riconoscimento della posa.</p>
+    <p>Se scegli di registrare un video di sfida o salvare un poster di allenamento, l'app salva il contenuto sul tuo dispositivo o sulla libreria Foto dopo aver ricevuto l'autorizzazione. I risultati del riconoscimento servono solo per il monitoraggio del fitness e l'intrattenimento, potrebbero essere imprecisi e non costituiscono diagnosi mediche o consigli sanitari professionali.</p>
+
+    <h3>5. Supporti per l'allenamento e spazio di archiviazione sul cloud gestito dagli sviluppatori</h3>
+    <p>Quando scegli di aggiungere, condividere o eseguire il backup di foto di allenamenti, poster o video di sfide, l'App potrebbe caricare i contenuti multimediali selezionati nell'archivio cloud gestito dallo sviluppatore o da un fornitore di servizi per la visualizzazione in-app, la condivisione con gli amici, il backup e il recupero della cronologia.</p>
+    <p>I caricamenti possono includere il file multimediale, il tipo di file, un identificatore di allenamento correlato e i collegamenti multimediali necessari per la visualizzazione. Non utilizziamo i media o i dati degli allenamenti per pubblicità, monitoraggio tra app o vendita a terzi.</p>
+    <p>Puoi evitare di caricare contenuti multimediali non aggiungendoli o condividendoli. Il contenuto caricato viene conservato finché è necessario per fornire la funzionalità pertinente. Dopo che non sarà più necessario o se ne richiederai l'eliminazione, verrà eliminato o reso anonimo, sebbene i backup di sicurezza possano rimanere finché non completano un ciclo di rotazione ragionevole.</p>
+
+    <h3>6. Responsabilità degli amici e CloudKit (facoltativo)</h3>
+    <p>Se <strong>aggiungi un amico</strong>, l'app condivide quanto segue con quell'amico tramite il database pubblico CloudKit di Apple:</p>
+    <ul>
+      <li>Data dell'allenamento, durata, calorie bruciate e nome della categoria di allenamento</li>
+      <li>Il <strong>nome visualizzato</strong> impostato all'interno dell'app (per impostazione predefinita è il nome del tuo dispositivo; modificabile in <em>Strumenti → Supervisione reciproca degli amici</em>; questo è ciò che vedono gli amici)</li>
+      <li>Foto di allenamenti, poster e collegamenti multimediali correlati che scegli di utilizzare per un check-in o una condivisione</li>
+      <li>Quando tocchi il pulsante "Ricorda al tuo amico", viene inviata una notifica push al dispositivo di quell'amico (contenente il tuo nome visualizzato)</li>
+    </ul>
+    <p>A meno che non lo inserisci in un nome visualizzato, una nota o un elemento multimediale, l'app non richiede né condivide intenzionalmente il tuo vero nome, numero di telefono, indirizzo email, misure del corpo o peso con gli amici.</p>
+    <p>L'identità utilizza l'identificatore del record utente iCloud (CKUserRecordID) assegnato da Apple. Questo identificatore normalmente non rivela da solo la tua identità nel mondo reale. Tuttavia, lo sviluppatore può visualizzare e gestire i record nel contenitore CloudKit dell'app tramite gli strumenti CloudKit quando fornisce supporto, mantiene il servizio, affronta abusi o rispetta la legge.</p>
+    <p>La rimozione di un amico interrompe la condivisione futura e impedisce a quell'amico di visualizzare nuovi check-in tramite l'app. I record CloudKit esistenti, i backup multimediali o i contenuti già ricevuti su un altro dispositivo potrebbero non essere eliminati automaticamente o immediatamente. Contattaci utilizzando l'e-mail seguente per richiedere l'eliminazione dei contenuti cloud correlati.</p>
+
+    <h3>7. Acquisti e abbonamenti in-app</h3>
+    <p>Gli abbonamenti mensili, gli abbonamenti annuali e gli sblocchi a vita vengono elaborati da Apple tramite l'App Store. L'App <strong>non riceve il numero della tua carta di pagamento o la password dell'ID Apple</strong>; legge i risultati dell'acquisto e lo stato dei diritti forniti da Apple per determinare se le funzionalità Pro devono essere sbloccate.</p>
+
+    <h3>8. Conservazione, cancellazione e sicurezza</h3>
+    <p>Tu controlli i dati archiviati localmente sul tuo dispositivo e puoi eliminarli utilizzando i controlli dell'app disponibili o disinstallando l'app. Puoi gestire i dati iCloud tramite le impostazioni iCloud del sistema. I record del database pubblico CloudKit e i supporti cloud gestiti dagli sviluppatori vengono conservati finché sono ragionevolmente necessari per le funzioni di amicizia, sincronizzazione, backup, ripristino, sicurezza e risoluzione delle controversie.</p>
+    <p>Per chiedere informazioni o richiedere l'eliminazione di contenuti gestiti da servizi cloud gestiti dagli sviluppatori, inviare un'e-mail a <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> e fornire informazioni sufficienti per individuare i record. Elaboreremo le richieste verificate in base ai requisiti di legge, sicurezza e prevenzione degli abusi applicabili.</p>
+    <p>Utilizziamo ragionevoli misure di sicurezza tecniche e organizzative, ma nessuno spazio di archiviazione locale, trasmissione di rete o servizio cloud può essere garantito completamente sicuro.</p>
+
+    <h3>9. Fornitori di servizi</h3>
+    <p>L'App può utilizzare i servizi App Store, StoreKit, HealthKit, iCloud, CloudKit, notifiche push e Foto di Apple, insieme ai servizi cloud configurati dallo sviluppatore per l'archiviazione multimediale e le necessarie funzioni backend. Ciascun fornitore elabora i dati secondo i propri termini e la propria politica sulla privacy.</p>
+
+    <h3>10. Privacy dei bambini</h3>
+    <p>L'App non è rivolta ai bambini di età inferiore a 13 anni e non raccoglie consapevolmente le informazioni personali dei bambini.</p>
+
+    <h3>11. Modifiche</h3>
+    <p>Gli aggiornamenti a questa politica verranno pubblicati in questa pagina; la "Data di entrata in vigore" in alto verrà modificata di conseguenza.</p>
+
+    <h3>12. Contatto</h3>
+    <p>Domande? Invia un'e-mail a <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="ja" lang="ja" class="section">
+    <h2>プライバシーポリシー</h2>
+    <p class="meta">発効日: 2026 年 10 月 1 日</p>
+
+    <p>「Pumpa 练记」（「アプリ」）は、<strong>xpzeng001@gmail.com</strong> でアクセスできる独立した開発者によって開発および保守されています。私たちはあなたのプライバシーを重視しています。このポリシーでは、アプリがデータをどのように処理するかについて説明します。</p>
+
+    <h3>1.私たちが処理するもの</h3>
+    <p>アプリにはサードパーティの分析、追跡、広告 SDK は含まれておらず、当社がお客様の個人データを販売することもありません。</p>
+    <p>ワークアウトの記録、トレーニング プラン、統計、履歴、ウィジェットを提供するために、アプリは、ワークアウトの記録、トレーニング プラン、完了したセット、身体測定、設定、サブスクリプション ステータス、追加することを選択したワークアウトの写真やポスターなど、ユーザーが入力または生成したデータを処理します。</p>
+    <p>ユーザーが提供することを選択した場合、またはそれを必要とする機能を使用しない限り、アプリはユーザーの実名、電話番号、電子メール アドレス、または正確な位置情報を尋ねることはありません。</p>
+
+    <h3>2. Apple ヘルス (オプション)</h3>
+    <p>許可を与えると、アプリは Apple Health からワークアウト、心拍数、活動エネルギー、体重、安静時心拍数を読み取り、ワークアウト履歴を整理し、健康指標を表示し、ワークアウト統計を生成し、体の傾向を表示します。このアプリは Apple Health にデータを書き込みません。</p>
+    <p>Apple Health から読み取られたデータは、デバイスにのみ保存されます。開発者のサーバー、CloudKit、または iCloud にはアップロードされず、広告、マーケティング、データ マイニング、または友人との共有には使用されません。ヘルスケア アプリまたはシステム設定でいつでもアクセスを変更または取り消すことができます。</p>
+
+    <h3>3.ローカル ストレージと iCloud 同期</h3>
+    <p>Pumpa で直接作成したワークアウト記録、身体測定値、設定は、デフォルトでデバイス上にローカルに保存されます。</p>
+    <p>プレミアム (プロ) サブスクリプションをお持ちの場合、アプリは Apple の<strong>iCloud Key-Value ストア</strong>を使用して、Pumpa が作成したワークアウトの記録と設定を、同じ Apple ID にサインインしているデバイス間で同期します。 Apple Health からインポートされたデータは、iCloud 同期から除外されます。</p>
+    <p>このデータは、Apple によって iCloud アカウントに保存され、管理されます。通常、開発者はプライベートな iCloud 同期コンテンツを直接読み取ることはありませんが、Apple は独自の規約とプライバシー ポリシーに基づいてデータを処理します。 <em>設定 → Apple ID → iCloud</em> で iCloud を無効にすることができます。</p>
+
+    <h3>4.カメラ、写真、ポーズ認識</h3>
+    <p>懸垂、腕立て伏せ、または同様の認識チャレンジの使用を選択すると、アプリはデバイス上のカメラ フィードを処理して、体の姿勢を分析し、繰り返しを推定します。ポーズ認識を使用するという理由だけで、認識に使用されるライブ カメラ フレームが開発者のサーバーにアップロードされるわけではありません。</p>
+    <p>チャレンジビデオを録画するか、ワークアウトポスターを保存することを選択した場合、アプリは許可を受け取った後、そのコンテンツをデバイスまたは写真ライブラリに保存します。認識結果はフィットネスの追跡とエンターテイメントのみを目的としており、不正確である可能性があり、医学的診断や専門家の健康上のアドバイスではありません。</p>
+
+    <h3>5.ワークアウト メディアと開発者が運営するクラウド ストレージ</h3>
+    <p>ワークアウトの写真、ポスター、またはチャレンジビデオを追加、共有、またはバックアップすることを選択すると、アプリは、アプリ内表示、友達の共有、バックアップ、履歴の回復のために、開発者またはサービスプロバイダーが運営するクラウドストレージに選択したメディアをアップロードする場合があります。</p>
+    <p>アップロードには、メディア ファイル、ファイル タイプ、関連するワークアウト ID、表示に必要なメディア リンクが含まれる場合があります。当社は、ワークアウト メディアやワークアウト データを広告、アプリ間の追跡、または第三者への販売に使用しません。</p>
+    <p>メディアを追加または共有しないことで、メディアのアップロードを回避できます。アップロードされたコンテンツは、関連機能を提供するために必要な間保持されます。不要になった場合、または削除をリクエストした場合は削除または匿名化されますが、セキュリティ バックアップは適切なローテーション サイクルが完了するまで保持される場合があります。</p>
+
+    <h3>6.友人の責任と CloudKit (オプション)</h3>
+    <p><strong>友達を追加</strong>すると、アプリは Apple の CloudKit パブリック データベースを通じてその友達と以下を共有します。</p>
+    <ul>
+      <li>ワークアウトの日付、期間、消費カロリー、エクササイズのカテゴリ名</li>
+      <li>アプリ内で設定した<strong>表示名</strong>（デフォルトはデバイス名です。<em>[ツール] → [友達相互監視]</em>で編集可能。これは友達に表示される名前です）</li>
+      <li>チェックインまたは共有に使用することを選択したワークアウトの写真、ポスター、関連メディアのリンク</li>
+      <li>[友達に通知する] ボタンをタップすると、その友達のデバイスにプッシュ通知が送信されます (表示名が含まれます)</li>
+    </ul>
+    <p>表示名、メモ、またはメディア アイテムに設定しない限り、アプリはあなたの本名、電話番号、電子メール アドレス、身体測定値、体重を友人と共有することを要求したり、意図的に共有したりすることはありません。</p>
+    <p>ID は、Apple によって割り当てられた iCloud ユーザー レコード識別子 (CKUserRecordID) を使用します。通常、この識別子だけではあなたの現実世界の身元が明らかになるわけではありません。ただし、開発者は、サポートの提供、サービスの維持、不正行為への対処、または法律の遵守の際に、CloudKit ツールを通じてアプリの CloudKit コンテナ内の記録を表示および管理することができます。</p>
+    <p>友人を削除すると、今後の共有が停止され、その友人はアプリを通じて新しいチェックインを表示できなくなります。既存の CloudKit レコード、メディア バックアップ、または別のデバイスで既に受信したコンテンツは、自動的または即時に削除されない場合があります。関連するクラウド コンテンツの削除をリクエストするには、以下のメールを使用してご連絡ください。</p>
+
+    <h3>7.アプリ内購入とサブスクリプション</h3>
+    <p>月次サブスクリプション、年次サブスクリプション、および生涯ロック解除は、Apple によって App Store を通じて処理されます。アプリは<strong>支払いカード番号や Apple ID パスワードを受け取りません</strong>。 Apple が提供する購入結果と資格ステータスを読み取り、Pro 機能のロックを解除する必要があるかどうかを判断します。</p>
+
+    <h3>8.保存、削除、セキュリティ</h3>
+    <p>お客様は、デバイス上にローカルに保存されているデータを管理し、利用可能なアプリ コントロールを使用するか、アプリをアンインストールすることでデータを削除できます。システムの iCloud 設定を通じて iCloud データを管理できます。 CloudKit パブリック データベースの記録と開発者が運用するクラウド メディアは、フレンド、同期、バックアップ、リカバリ、セキュリティ、紛争解決の機能に合理的に必要な間は保持されます。</p>
+    <p>開発者が運営するクラウド サービスで処理されるコンテンツについて質問または削除をリクエストするには、<a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> に電子メールを送信し、記録を見つけるのに十分な情報を提供してください。当社は、適用される法律、セキュリティ、不正行為防止の要件に従って、検証済みのリクエストを処理します。</p>
+    <p>当社では合理的な技術的および組織的な安全対策を講じていますが、ローカル ストレージ、ネットワーク伝送、またはクラウド サービスが完全に安全であることを保証することはできません。</p>
+
+    <h3>9.サービスプロバイダー</h3>
+    <p>アプリは、Apple の App Store、StoreKit、HealthKit、iCloud、CloudKit、プッシュ通知、およびフォト サービスを、メディア ストレージおよび必要なバックエンド機能用に開発者によって構成されたクラウド サービスとともに使用する場合があります。各プロバイダーは、独自の条件とプライバシー ポリシーに基づいてデータを処理します。</p>
+
+    <h3>10.子供のプライバシー</h3>
+    <p>このアプリは 13 歳未満の子供を対象としたものではなく、故意に子供の個人情報を収集することはありません。</p>
+
+    <h3>11.変更点</h3>
+    <p>このポリシーの更新はこのページに掲載されます。上部の「発効日」はそれに応じて変更されます。</p>
+
+    <h3>12.連絡先</h3>
+    <p>ご質問がありますか? <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> に電子メールを送信します。</p>
+  </section>
+
+  <section id="ko" lang="ko" class="section">
+    <h2>개인 정보 보호 정책</h2>
+    <p class="meta">유효일: 2026년 10월 1일</p>
+
+    <p>"Pumpa 练记"("앱")은 <strong>xpzeng001@gmail.com</strong>에 연락할 수 있는 독립 개발자가 개발 및 유지 관리합니다. 우리는 귀하의 개인 정보를 중요하게 생각합니다. 이 정책은 앱이 귀하의 데이터를 처리하는 방법을 설명합니다.</p>
+
+    <h3>1. 우리가 처리하는 것</h3>
+    <p>앱에는 제3자 분석, 추적 또는 광고 SDK가 포함되어 있지 않으며 당사는 귀하의 개인 데이터를 판매하지 않습니다.</p>
+    <p>운동 기록, 훈련 계획, 통계, 내역 및 위젯을 제공하기 위해 앱은 운동 기록, 훈련 계획, 완료된 세트, 신체 측정, 기본 설정, 구독 상태, 추가하기로 선택한 운동 사진 또는 포스터를 포함하여 귀하가 입력하거나 생성하는 데이터를 처리합니다.</p>
+    <p>귀하가 정보 제공을 선택하거나 이를 요구하는 기능을 사용하지 않는 한, 앱은 귀하의 실명, 전화번호, 이메일 주소 또는 정확한 위치를 요구하지 않습니다.</p>
+
+    <h3>2. Apple 건강(선택 사항)</h3>
+    <p>권한을 부여하면 앱이 Apple 건강에서 운동, 심박수, 활동 에너지, 체질량, 안정시 심박수를 읽어 운동 기록을 정리하고 건강 지표를 표시하며 운동 통계를 생성하고 신체 추세를 표시합니다. 앱은 Apple Health에 데이터를 쓰지 않습니다.</p>
+    <p>Apple Health에서 읽은 데이터는 귀하의 기기에만 저장됩니다. 개발자 서버, CloudKit, iCloud에 업로드되지 않으며 광고, 마케팅, 데이터 마이닝 또는 친구와의 공유에 사용되지 않습니다. 건강 앱이나 시스템 설정에서 언제든지 액세스 권한을 변경하거나 취소할 수 있습니다.</p>
+
+    <h3>3. 로컬 저장소 및 iCloud 동기화</h3>
+    <p>Pumpa에서 직접 생성한 운동 기록, 신체 측정, 환경 설정은 기본적으로 기기에 로컬로 저장됩니다.</p>
+    <p>프리미엄(Pro) 구독이 있는 경우 앱은 Apple의 <strong>iCloud 키-값 스토어</strong>를 사용하여 동일한 Apple ID에 로그인된 기기 전체에서 Pumpa가 생성한 운동 기록과 설정을 동기화합니다. Apple Health에서 가져온 데이터는 iCloud 동기화에서 제외됩니다.</p>
+    <p>이 데이터는 Apple이 귀하의 iCloud 계정에 저장하고 관리합니다. 개발자는 일반적으로 개인 iCloud 동기화 콘텐츠를 직접 읽지 않지만 Apple은 자체 약관 및 개인 정보 보호 정책에 따라 데이터를 처리합니다. <em>설정 → Apple ID → iCloud</em>에서 iCloud를 비활성화할 수 있습니다.</p>
+
+    <h3>4. 카메라, 사진 및 포즈 인식</h3>
+    <p>풀업, 푸시업 또는 유사한 인식 과제를 사용하기로 선택하면 앱이 기기의 카메라 피드를 처리하여 신체 자세를 분석하고 반복 횟수를 추정합니다. 단지 포즈 인식을 사용한다고 해서 인식에 사용되는 라이브 카메라 프레임이 개발자 서버에 업로드되는 것은 아닙니다.</p>
+    <p>챌린지 동영상을 녹화하거나 운동 포스터를 저장하기로 선택한 경우 앱은 승인을 받은 후 해당 콘텐츠를 기기나 사진 라이브러리에 저장합니다. 인식 결과는 피트니스 추적 및 오락용으로만 사용되며, 부정확할 수 있으며, 의학적 진단이나 전문적인 건강 조언이 아닙니다.</p>
+
+    <h3>5. 운동 미디어 및 개발자가 운영하는 클라우드 저장소</h3>
+    <p>운동 사진, 포스터 또는 챌린지 동영상을 추가, 공유 또는 백업하기로 선택하면 앱은 앱 내 표시, 친구 공유, 백업 및 기록 복구를 위해 개발자 또는 서비스 제공업체가 운영하는 클라우드 저장소에 선택한 미디어를 업로드할 수 있습니다.</p>
+    <p>업로드에는 미디어 파일, 파일 형식, 관련 운동 식별자, 표시에 필요한 미디어 링크가 포함될 수 있습니다. 우리는 광고, 앱 간 추적 또는 제3자 판매를 위해 운동 미디어나 운동 데이터를 사용하지 않습니다.</p>
+    <p>미디어를 추가하거나 공유하지 않으면 미디어 업로드를 피할 수 있습니다. 업로드된 콘텐츠는 관련 기능을 제공하는 데 필요한 동안 보관됩니다. 더 이상 필요하지 않거나 삭제를 요청한 후에는 삭제되거나 익명화되지만 보안 백업은 합리적인 순환 주기가 완료될 때까지 남아 있을 수 있습니다.</p>
+
+    <h3>6. 친구 책임 및 CloudKit(선택 사항)</h3>
+    <p><strong>친구를 추가</strong>하면 앱은 Apple의 CloudKit 공개 데이터베이스를 통해 해당 친구와 다음을 공유합니다.</p>
+    <ul>
+      <li>운동 날짜, 기간, 소모 칼로리 및 운동 카테고리 이름</li>
+      <li>앱 내에서 설정한 <strong>표시 이름</strong>(기본값은 기기 이름, <em>도구 → 친구 상호 감독</em>에서 편집 가능, 친구에게 표시됨)</li>
+      <li>체크인 또는 공유에 사용하기로 선택한 운동 사진, 포스터 및 관련 미디어 링크</li>
+      <li>'친구에게 알림' 버튼을 탭하면 푸시 알림이 해당 친구의 기기로 전송됩니다(표시 이름 포함).</li>
+    </ul>
+    <p>표시 이름, 메모 또는 미디어 항목에 배치하지 않는 한, 앱은 귀하의 실명, 전화번호, 이메일 주소, 신체 치수 또는 체중을 친구에게 요구하거나 의도적으로 공유하지 않습니다.</p>
+    <p>ID는 Apple에서 할당한 iCloud 사용자 기록 식별자(CKUserRecordID)를 사용합니다. 이 식별자는 일반적으로 귀하의 실제 신원을 그 자체로 드러내지는 않습니다. 그러나 개발자는 지원 제공, 서비스 유지, 남용 해결 또는 법률 준수 시 CloudKit 도구를 통해 앱의 CloudKit 컨테이너에 있는 기록을 보고 관리할 수 있습니다.</p>
+    <p>친구를 삭제하면 향후 공유가 중단되고 해당 친구가 앱을 통해 새 체크인을 볼 수 없습니다. 기존 CloudKit 기록, 미디어 백업 또는 다른 장치에서 이미 수신한 콘텐츠는 자동으로 또는 즉시 삭제되지 않을 수 있습니다. 관련 클라우드 콘텐츠 삭제를 요청하려면 아래 이메일을 사용하여 문의하세요.</p>
+
+    <h3>7. 인앱 구매 및 구독</h3>
+    <p>월간 구독, 연간 구독 및 평생 잠금 해제는 Apple이 App Store를 통해 처리합니다. 앱은 <strong>귀하의 결제 카드 번호나 Apple ID 비밀번호를 받지 않습니다</strong>. Pro 기능을 잠금 해제해야 하는지 여부를 결정하기 위해 Apple에서 제공한 구매 결과 및 자격 상태를 읽습니다.</p>
+
+    <h3>8. 보관, 삭제 및 보안</h3>
+    <p>귀하는 기기에 로컬로 저장된 데이터를 제어하고 사용 가능한 앱 컨트롤을 사용하거나 앱을 제거하여 데이터를 삭제할 수 있습니다. 시스템 iCloud 설정을 통해 iCloud 데이터를 관리할 수 있습니다. CloudKit 공개 데이터베이스 기록과 개발자가 운영하는 클라우드 미디어는 친구, 동기화, 백업, 복구, 보안 및 분쟁 해결 기능을 위해 합리적으로 필요한 동안 보관됩니다.</p>
+    <p>개발자 운영 클라우드 서비스에서 처리하는 콘텐츠에 대해 문의하거나 삭제를 요청하려면 <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>으로 이메일을 보내 기록을 찾을 수 있는 충분한 정보를 제공하세요. 당사는 해당 법률, 보안 및 남용 방지 요구 사항에 따라 확인된 요청을 처리합니다.</p>
+    <p>우리는 합리적인 기술 및 조직적 보호 장치를 사용하지만 로컬 저장소, 네트워크 전송 또는 클라우드 서비스는 완전한 보안을 보장할 수 없습니다.</p>
+
+    <h3>9. 서비스 제공자</h3>
+    <p>앱은 미디어 저장 및 필요한 백엔드 기능을 위해 개발자가 구성한 클라우드 서비스와 함께 Apple의 App Store, StoreKit, HealthKit, iCloud, CloudKit, 푸시 알림 및 사진 서비스를 사용할 수 있습니다. 각 제공업체는 자체 약관 및 개인정보취급방침에 따라 데이터를 처리합니다.</p>
+
+    <h3>10. 아동의 개인정보 보호</h3>
+    <p>이 앱은 13세 미만의 어린이를 대상으로 하지 않으며 고의로 어린이의 개인 정보를 수집하지 않습니다.</p>
+
+    <h3>11. 변경사항</h3>
+    <p>이 정책에 대한 업데이트는 이 페이지에 게시됩니다. 이에 따라 상단의 '발효일'도 수정됩니다.</p>
+
+    <h3>12. 연락처</h3>
+    <p>질문이 있으신가요? <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>으로 이메일을 보내세요.</p>
+  </section>
+
+  <section id="pl" lang="pl" class="section">
+    <h2>Polityka prywatności</h2>
+    <p class="meta">Data wejścia w życie: 1 października 2026 r.</p>
+
+    <p>„Pumpa 练记” („Aplikacja”) została opracowana i utrzymywana przez niezależnego programistę, z którym można się skontaktować pod adresem <strong>xpzeng001@gmail.com</strong>. Poważnie podchodzimy do Twojej prywatności. Niniejsza polityka wyjaśnia, w jaki sposób Aplikacja obsługuje Twoje dane.</p>
+
+    <h3>1. Co przetwarzamy</h3>
+    <p>Aplikacja nie zawiera zewnętrznych pakietów SDK do analiz, śledzenia ani reklam i nie sprzedajemy Twoich danych osobowych.</p>
+    <p>Aby zapewnić rejestrowanie treningów, plany treningowe, statystyki, historię i widżety, aplikacja przetwarza wprowadzane lub generowane przez Ciebie dane, w tym zapisy treningów, plany treningowe, wykonane serie, pomiary ciała, preferencje, stan subskrypcji oraz zdjęcia lub plakaty treningowe, które zdecydujesz się dodać.</p>
+    <p>Jeśli nie zdecydujesz się na ich podanie lub nie skorzystasz z funkcji, która tego wymaga, aplikacja nie poprosi o podanie Twojego prawdziwego imienia i nazwiska, numeru telefonu, adresu e-mail ani dokładnej lokalizacji.</p>
+
+    <h3>2. Zdrowie Apple (opcjonalnie)</h3>
+    <p>Po udzieleniu pozwolenia aplikacja odczytuje treningi, tętno, energię czynną, masę ciała i tętno spoczynkowe z Apple Health w celu porządkowania historii treningów, wyświetlania wskaźników zdrowotnych, generowania statystyk treningów i pokazywania trendów dotyczących ciała. Aplikacja nie zapisuje danych w Apple Health.</p>
+    <p>Dane odczytane z Apple Health są przechowywane tylko na Twoim urządzeniu. Nie jest przesyłany na serwery programisty, CloudKit ani iCloud i nie jest używany do celów reklamowych, marketingowych, eksploracji danych ani udostępniania znajomym. Możesz zmienić lub cofnąć dostęp w dowolnym momencie w aplikacji Zdrowie lub w ustawieniach systemu.</p>
+
+    <h3>3. Pamięć lokalna i synchronizacja z iCloud</h3>
+    <p>Zapisy treningów, wymiary ciała i preferencje utworzone bezpośrednio w Pumpie są domyślnie przechowywane lokalnie na Twoim urządzeniu.</p>
+    <p>Jeśli masz subskrypcję Premium (Pro), aplikacja korzysta ze sklepu <strong>iCloud Key-Value Store</strong> firmy Apple w celu synchronizowania zapisów treningów i ustawień utworzonych przez Pumpę na urządzeniach zalogowanych do tego samego Apple ID. Dane zaimportowane z Apple Health są wyłączone z synchronizacji iCloud.</p>
+    <p>Te dane są przechowywane i zarządzane przez Apple w ramach Twojego konta iCloud. Programista zwykle nie czyta bezpośrednio Twojej prywatnej zawartości synchronizowanej z iCloud, podczas gdy Apple przetwarza dane zgodnie z własnymi warunkami i polityką prywatności. Możesz wyłączyć iCloud w <em>Ustawienia → Apple ID → iCloud</em>.</p>
+
+    <h3>4. Aparat, zdjęcia i rozpoznawanie pozy</h3>
+    <p>Jeśli zdecydujesz się na wyzwanie polegające na podciąganiu, pompkach lub podobnym rozpoznawaniu, aplikacja przetwarza obraz z kamery na Twoim urządzeniu, aby przeanalizować pozycję ciała i oszacować powtórzenia. Kadry z kamer na żywo używane do rozpoznawania nie są przesyłane na serwery programisty tylko dlatego, że korzystasz z rozpoznawania pozy.</p>
+    <p>Jeśli zdecydujesz się nagrać film z wyzwaniem lub zapisać plakat z treningiem, aplikacja zapisze tę zawartość na Twoim urządzeniu lub w bibliotece Zdjęć po otrzymaniu pozwolenia. Wyniki rozpoznawania służą wyłącznie do śledzenia kondycji i rozrywki, mogą być niedokładne i nie stanowią diagnozy medycznej ani profesjonalnej porady zdrowotnej.</p>
+
+    <h3>5. Media treningowe i pamięć w chmurze obsługiwana przez programistów</h3>
+    <p>Gdy zdecydujesz się dodawać, udostępniać lub tworzyć kopie zapasowe zdjęć z treningów, plakatów lub filmów z wyzwaniami, aplikacja może przesyłać wybrane multimedia do magazynu w chmurze obsługiwanego przez programistę lub usługodawcę w celu wyświetlania w aplikacji, udostępniania znajomym, tworzenia kopii zapasowych i odzyskiwania historii.</p>
+    <p>Przesłane pliki mogą zawierać plik multimedialny, typ pliku, identyfikator powiązanego treningu i łącza do multimediów potrzebne do wyświetlenia. Nie używamy multimediów ani danych treningowych do celów reklamowych, śledzenia w aplikacjach ani sprzedaży osobom trzecim.</p>
+    <p>Możesz uniknąć przesyłania multimediów, nie dodając ich ani nie udostępniając. Przesłane treści są zachowywane, dopóki są potrzebne do zapewnienia odpowiedniej funkcji. Gdy nie będzie już potrzebny lub poprosisz o usunięcie, zostanie usunięty lub zanonimizowany, chociaż kopie zapasowe zabezpieczeń mogą pozostać, dopóki nie zakończą rozsądnego cyklu rotacji.</p>
+
+    <h3>6. Odpowiedzialność znajomych i CloudKit (opcjonalnie)</h3>
+    <p>Jeśli <strong>dodasz znajomego</strong>, aplikacja udostępni temu znajomemu następujące informacje za pośrednictwem publicznej bazy danych Apple CloudKit:</p>
+    <ul>
+      <li>Data treningu, czas jego trwania, spalone kalorie i nazwa kategorii ćwiczeń</li>
+      <li> <strong>Nazwa wyświetlana</strong>, którą ustawiasz w aplikacji (domyślnie jest to nazwa Twojego urządzenia; można ją edytować w <em>Narzędzia → Wzajemny nadzór znajomych</em>; to widzą znajomi)</li>
+      <li>Zdjęcia z treningów, plakaty i powiązane linki do multimediów, których użyjesz do zameldowania się lub udostępnienia</li>
+      <li>Gdy dotkniesz przycisku „Przypomnij znajomemu”, na urządzenie znajomego zostanie wysłane powiadomienie push (zawierające Twoją wyświetlaną nazwę)</li>
+    </ul>
+    <p>Jeśli nie umieścisz go w wyświetlanej nazwie, notatce lub elemencie multimedialnym, aplikacja nie wymaga ani celowo nie udostępnia znajomym Twojego prawdziwego imienia i nazwiska, numeru telefonu, adresu e-mail, wymiarów ciała ani wagi.</p>
+    <p>Identity korzysta z identyfikatora rekordu użytkownika iCloud (CKUserRecordID) przypisanego przez firmę Apple. Identyfikator ten zwykle sam w sobie nie ujawnia Twojej tożsamości w świecie rzeczywistym. Programista może jednak przeglądać rekordy w kontenerze CloudKit aplikacji i zarządzać nimi za pomocą narzędzi CloudKit podczas zapewniania wsparcia, utrzymywania usługi, reagowania na nadużycia lub przestrzegania prawa.</p>
+    <p>Usunięcie znajomego zatrzymuje udostępnianie w przyszłości i uniemożliwia temu znajomemu przeglądanie nowych meldowań za pośrednictwem aplikacji. Istniejące rekordy CloudKit, kopie zapasowe multimediów lub treści już otrzymane na innym urządzeniu mogą nie zostać usunięte automatycznie ani natychmiast. Skontaktuj się z nami, korzystając z poniższego adresu e-mail, aby poprosić o usunięcie powiązanej zawartości w chmurze.</p>
+
+    <h3>7. Zakupy i subskrypcje w aplikacji</h3>
+    <p>Miesięczne subskrypcje, roczne subskrypcje i dożywotnie odblokowania są przetwarzane przez firmę Apple za pośrednictwem sklepu App Store. Aplikacja <strong>nie otrzymuje numeru karty płatniczej ani hasła Apple ID</strong>; odczytuje wyniki zakupów i status uprawnień dostarczone przez Apple, aby określić, czy funkcje Pro powinny zostać odblokowane.</p>
+
+    <h3>8. Przechowywanie, usuwanie i bezpieczeństwo</h3>
+    <p>Masz kontrolę nad danymi przechowywanymi lokalnie na Twoim urządzeniu i możesz je usunąć, korzystając z dostępnych opcji kontroli aplikacji lub odinstalowując aplikację. Możesz zarządzać danymi iCloud za pomocą systemowych ustawień iCloud. Rekordy publicznej bazy danych CloudKit i media w chmurze obsługiwane przez programistów są zachowywane, dopóki są w uzasadniony sposób potrzebne do celów znajomych, synchronizacji, tworzenia kopii zapasowych, odzyskiwania, bezpieczeństwa i rozwiązywania sporów.</p>
+    <p>Aby zapytać lub poprosić o usunięcie treści obsługiwanych przez usługi w chmurze obsługiwane przez programistów, wyślij e-mail na adres <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> i podaj informacje wystarczające do zlokalizowania rekordów. Będziemy przetwarzać zweryfikowane żądania zgodnie z obowiązującym prawem, wymogami bezpieczeństwa i zapobiegania nadużyciom.</p>
+    <p>Stosujemy uzasadnione zabezpieczenia techniczne i organizacyjne, ale żadna lokalna pamięć masowa, transmisja sieciowa ani usługa w chmurze nie może zagwarantować całkowitego bezpieczeństwa.</p>
+
+    <h3>9. Dostawcy usług</h3>
+    <p>Aplikacja może korzystać z usług Apple App Store, StoreKit, HealthKit, iCloud, CloudKit, powiadomień push i zdjęć firmy Apple, a także usług w chmurze skonfigurowanych przez programistę do przechowywania multimediów i niezbędnych funkcji zaplecza. Każdy dostawca przetwarza dane zgodnie z własnymi warunkami i polityką prywatności.</p>
+
+    <h3>10. Prywatność dzieci</h3>
+    <p>Aplikacja nie jest przeznaczona dla dzieci poniżej 13 roku życia i nie gromadzi świadomie danych osobowych dzieci.</p>
+
+    <h3>11. Zmiany</h3>
+    <p>Aktualizacje tej polityki będą publikowane na tej stronie; „Data wejścia w życie” u góry zostanie odpowiednio zmieniona.</p>
+
+    <h3>12. Skontaktuj się</h3>
+    <p>Masz pytania? Wyślij e-mail na adres <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="pt-BR" lang="pt-BR" class="section">
+    <h2>Política de Privacidade</h2>
+    <p class="meta">Data de vigência: 1º de outubro de 2026</p>
+
+    <p>"Pumpa 练记" (o "Aplicativo") é desenvolvido e mantido por um desenvolvedor independente, acessível em <strong>xpzeng001@gmail.com</strong>. Levamos a sua privacidade a sério. Esta política explica como o aplicativo trata seus dados.</p>
+
+    <h3>1. O que processamos</h3>
+    <p>O aplicativo não contém SDKs de análise, rastreamento ou publicidade de terceiros e não vendemos seus dados pessoais.</p>
+    <p>Para fornecer registros de treino, planos de treino, estatísticas, histórico e widgets, o aplicativo processa os dados que você insere ou gera, incluindo registros de treino, planos de treino, séries concluídas, medidas corporais, preferências, status de assinatura e fotos ou pôsteres de treino que você escolhe adicionar.</p>
+    <p>A menos que você opte por fornecê-lo ou usar um recurso que o exija, o aplicativo não solicitará seu nome real, número de telefone, endereço de e-mail ou localização precisa.</p>
+
+    <h3>2. Saúde da Apple (opcional)</h3>
+    <p>Depois de conceder permissão, o aplicativo lê treinos, frequência cardíaca, energia ativa, massa corporal e frequência cardíaca em repouso do Apple Health para organizar o histórico de exercícios, exibir métricas de saúde, gerar estatísticas de treino e mostrar tendências corporais. O aplicativo não grava dados no Apple Health.</p>
+    <p>Os dados lidos do Apple Health são armazenados apenas no seu dispositivo. Ele não é carregado nos servidores do desenvolvedor, CloudKit ou iCloud e não é usado para publicidade, marketing, mineração de dados ou compartilhamento com amigos. Você pode alterar ou revogar o acesso a qualquer momento no app Saúde ou nas configurações do sistema.</p>
+
+    <h3>3. Armazenamento local e sincronização do iCloud</h3>
+    <p>Registros de treino, medidas corporais e preferências que você cria diretamente no Pumpa são armazenados localmente no seu dispositivo por padrão.</p>
+    <p>Se você tiver uma assinatura Premium (Pro), o aplicativo usa o <strong>iCloud Key-Value Store</strong> da Apple para sincronizar registros e configurações de treino criados pelo Pumpa em dispositivos conectados ao mesmo ID Apple. Os dados importados do Apple Health são excluídos da sincronização do iCloud.</p>
+    <p>Esses dados são armazenados e gerenciados pela Apple na sua conta iCloud. O desenvolvedor normalmente não lê diretamente o conteúdo privado de sincronização do iCloud, enquanto a Apple processa os dados de acordo com seus próprios termos e política de privacidade. Você pode desativar o iCloud em <em>Configurações → ID Apple → iCloud</em>.</p>
+
+    <h3>4. Câmera, fotos e reconhecimento de pose</h3>
+    <p>Quando você escolhe usar uma flexão de braços, uma flexão de braços ou um desafio de reconhecimento semelhante, o aplicativo processa a imagem da câmera no seu dispositivo para analisar a pose do corpo e estimar as repetições. Os quadros de câmera ao vivo usados para reconhecimento não são enviados aos servidores do desenvolvedor apenas porque você usa o reconhecimento de pose.</p>
+    <p>Se você optar por gravar um vídeo de desafio ou salvar um pôster de treino, o aplicativo salva esse conteúdo em seu dispositivo ou na biblioteca de fotos após receber permissão. Os resultados do reconhecimento são apenas para monitoramento de condicionamento físico e entretenimento, podem ser imprecisos e não são diagnósticos médicos ou conselhos de saúde profissionais.</p>
+
+    <h3>5. Mídia de treino e armazenamento em nuvem operado por desenvolvedores</h3>
+    <p>Quando você opta por adicionar, compartilhar ou fazer backup de fotos de exercícios, pôsteres ou vídeos de desafios, o aplicativo pode enviar a mídia selecionada para o armazenamento em nuvem operado pelo desenvolvedor ou por um provedor de serviços para exibição no aplicativo, compartilhamento com amigos, backup e recuperação de histórico.</p>
+    <p>Os uploads podem incluir o arquivo de mídia, o tipo de arquivo, um identificador de treino relacionado e links de mídia necessários para exibição. Não usamos mídia ou dados de treino para publicidade, rastreamento entre aplicativos ou venda a terceiros.</p>
+    <p>Você pode evitar o upload de mídia se não adicioná-la ou compartilhá-la. O conteúdo enviado é retido enquanto for necessário para fornecer o recurso relevante. Depois que ele não for mais necessário ou você solicitar a exclusão, ele será excluído ou anonimizado, embora os backups de segurança possam permanecer até completarem um ciclo de rotação razoável.</p>
+
+    <h3>6. Responsabilidade do amigo e CloudKit (opcional)</h3>
+    <p>Se você <strong>adicionar um amigo</strong>, o aplicativo compartilhará o seguinte com esse amigo por meio do banco de dados público CloudKit da Apple:</p>
+    <ul>
+      <li>Data do treino, duração, calorias queimadas e nome da categoria do exercício</li>
+      <li>O <strong>nome de exibição</strong> que você definiu no aplicativo (o padrão é o nome do seu dispositivo; editável em <em>Ferramentas → Supervisão mútua de amigos</em>; é isso que os amigos veem)</li>
+      <li>Fotos de treino, pôsteres e links de mídia relacionados que você escolhe usar para fazer check-in ou compartilhar</li>
+      <li>Quando você toca no botão "Lembrar seu amigo", uma notificação push é enviada para o dispositivo desse amigo (contendo seu nome de exibição)</li>
+    </ul>
+    <p>A menos que você o coloque em um nome de exibição, nota ou item de mídia, o aplicativo não exige nem compartilha intencionalmente seu nome real, número de telefone, endereço de e-mail, medidas corporais ou peso com amigos.</p>
+    <p>O Identity usa o identificador de registro de usuário do iCloud (CKUserRecordID) atribuído pela Apple. Este identificador normalmente não revela por si só a sua identidade no mundo real. No entanto, o desenvolvedor pode visualizar e gerenciar registros no contêiner CloudKit do Aplicativo por meio de ferramentas CloudKit ao fornecer suporte, manter o serviço, lidar com abusos ou cumprir a lei.</p>
+    <p>A remoção de um amigo interrompe o compartilhamento futuro e impede que esse amigo veja novos check-ins por meio do aplicativo. Registros existentes do CloudKit, backups de mídia ou conteúdo já recebido em outro dispositivo não podem ser excluídos automática ou imediatamente. Entre em contato conosco usando o e-mail abaixo para solicitar a exclusão do conteúdo relacionado na nuvem.</p>
+
+    <h3>7. Compras e assinaturas no aplicativo</h3>
+    <p>Assinaturas mensais, anuais e desbloqueios vitalícios são processados pela Apple por meio da App Store. O aplicativo <strong>não recebe o número do seu cartão de pagamento ou a senha do ID Apple</strong>; ele lê os resultados da compra e o status dos direitos fornecidos pela Apple para determinar se os recursos Pro devem ser desbloqueados.</p>
+
+    <h3>8. Retenção, exclusão e segurança</h3>
+    <p>Você controla os dados armazenados localmente no seu dispositivo e pode excluí-los usando os controles disponíveis do aplicativo ou desinstalando o aplicativo. Você pode gerenciar os dados do iCloud através das configurações do sistema iCloud. Os registros do banco de dados público do CloudKit e a mídia em nuvem operada pelo desenvolvedor são retidos enquanto razoavelmente necessários para funções de amizade, sincronização, backup, recuperação, segurança e resolução de disputas.</p>
+    <p>Para perguntar ou solicitar a exclusão de conteúdo gerenciado por serviços em nuvem operados por desenvolvedores, envie um e-mail para <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> e forneça informações suficientes para localizar os registros. Processaremos solicitações verificadas de acordo com a lei aplicável, segurança e requisitos de prevenção de abuso.</p>
+    <p>Usamos proteções técnicas e organizacionais razoáveis, mas nenhum armazenamento local, transmissão de rede ou serviço em nuvem pode ser garantido como completamente seguro.</p>
+
+    <h3>9. Prestadores de serviços</h3>
+    <p>O aplicativo pode usar os serviços App Store, StoreKit, HealthKit, iCloud, CloudKit, notificação push e Fotos da Apple, juntamente com serviços de nuvem configurados pelo desenvolvedor para armazenamento de mídia e funções de back-end necessárias. Cada provedor processa dados de acordo com seus próprios termos e política de privacidade.</p>
+
+    <h3>10. Privacidade das crianças</h3>
+    <p>O aplicativo não é direcionado a crianças menores de 13 anos e não coleta intencionalmente informações pessoais de crianças.</p>
+
+    <h3>11. Mudanças</h3>
+    <p>Atualizações desta política serão publicadas nesta página; a "Data de vigência" na parte superior será revisada de acordo.</p>
+
+    <h3>12. Contato</h3>
+    <p>Dúvidas? Envie um e-mail para <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="pt-PT" lang="pt-PT" class="section">
+    <h2>Política de Privacidade</h2>
+    <p class="meta">Data de entrada em vigor: 1 de outubro de 2026</p>
+
+    <p>"Pumpa 练记" (a "Aplicação") é desenvolvido e mantido por um programador independente, acessível em <strong>xpzeng001@gmail.com</strong>. Levamos a sua privacidade a sério. Esta política explica como a aplicação trata os seus dados.</p>
+
+    <h3>1. O que processamos</h3>
+    <p>A aplicação não contém SDKs de análise, rastreio ou publicidade de terceiros e não vendemos os seus dados pessoais.</p>
+    <p>Para fornecer registos de treino, planos de treino, estatísticas, histórico e widgets, a aplicação processa os dados que introduz ou gera, incluindo registos de treino, planos de treino, séries concluídas, medidas corporais, preferências, estado da assinatura e fotografias ou pósteres de treino que escolhe adicionar.</p>
+    <p>A menos que opte por fornecê-lo ou utilizar uma funcionalidade que o exija, a aplicação não solicitará o seu nome real, número de telefone, endereço de e-mail ou localização precisa.</p>
+
+    <h3>2. Apple Health (opcional)</h3>
+    <p>Depois de conceder permissão, a aplicação lê os treinos, o ritmo cardíaco, a energia ativa, a massa corporal e o ritmo cardíaco em repouso do Apple Health para organizar o histórico de exercício, exibir métricas de saúde, gerar estatísticas de treino e mostrar tendências corporais. A aplicação não grava dados no Apple Health.</p>
+    <p>Os dados lidos do Apple Health são armazenados apenas no seu dispositivo. Não é carregado nos servidores do programador, CloudKit ou iCloud e não é utilizado para publicidade, marketing, data mining ou partilha com amigos. Pode alterar ou revogar o acesso a qualquer momento na app Saúde ou nas definições do sistema.</p>
+
+    <h3>3. Armazenamento local e sincronização do iCloud</h3>
+    <p>Os registos de treino, as medidas corporais e as preferências que cria diretamente no Pumpa são armazenados localmente no seu dispositivo por defeito.</p>
+    <p>Se tiver uma subscrição Premium (Pro), a aplicação utiliza o <strong>iCloud Key-Value Store</strong> da Apple para sincronizar os registos e as definições de treino criados pelo Pumpa em dispositivos ligados ao mesmo ID Apple. Os dados importados do Apple Health são excluídos da sincronização do iCloud.</p>
+    <p>Estes dados são armazenados e geridos pela Apple na sua conta iCloud. O programador normalmente não lê diretamente o conteúdo privado de sincronização do iCloud, enquanto a Apple processa os dados de acordo com os seus próprios termos e política de privacidade. Pode desativar o iCloud em <em>Definições → ID Apple → iCloud</em>.</p>
+
+    <h3>4. Câmara, fotos e reconhecimento de pose</h3>
+    <p>Quando opta por utilizar uma flexão de braços, uma flexão de braços ou um desafio de reconhecimento semelhante, a aplicação processa a imagem da câmara no seu dispositivo para analisar a pose do corpo e estimar as repetições. Os fotogramas da câmara em direto utilizados para reconhecimento não são enviados para os servidores do programador apenas porque utiliza o reconhecimento de pose.</p>
+    <p>Se optar por gravar um vídeo de desafio ou guardar um cartaz de treino, a aplicação guarda esse conteúdo no seu dispositivo ou na biblioteca de fotografias após receber permissão. Os resultados do reconhecimento são apenas para monitorização de fitness e entretenimento, podem ser imprecisos e não são diagnósticos médicos ou conselhos de saúde profissionais.</p>
+
+    <h3>5. Media de treino e armazenamento em nuvem operado por programadores</h3>
+    <p>Quando opta por adicionar, partilhar ou fazer cópias de segurança de fotografias de exercício, pósteres ou vídeos de desafios, a aplicação pode enviar os suportes selecionados para o armazenamento em nuvem operado pelo programador ou por um fornecedor de serviços para exibição na aplicação, partilha com amigos, cópia de segurança e recuperação de histórico.</p>
+    <p>Os carregamentos podem incluir o ficheiro de média, o tipo de ficheiro, um identificador de treino relacionado e as ligações de média necessárias para a exibição. Não utilizamos media ou dados de treino para publicidade, rastreio entre aplicações ou venda a terceiros.</p>
+    <p>Pode evitar o carregamento de media se não a adicionar ou partilhar. O conteúdo enviado é retido enquanto for necessário para fornecer o recurso relevante. Assim que já não for necessário ou solicitar a eliminação, será eliminado ou anonimizado, embora os backups de segurança possam permanecer até completarem um ciclo de rotação razoável.</p>
+
+    <h3>6. Responsabilidade do amigo e CloudKit (opcional)</h3>
+    <p>Se <strong>adicionar um amigo</strong>, a aplicação partilhará o seguinte com esse amigo através da base de dados pública CloudKit da Apple:</p>
+    <ul>
+      <li>Data do treino, duração, calorias queimadas e nome da categoria do exercício</li>
+      <li>O <strong>nome de visualização</strong> que definiu na aplicação (o predefinido é o nome do seu dispositivo; editável em <em>Ferramentas → Supervisão mútua de amigos</em>; é o que os amigos veem)</li>
+      <li>Fotos de treino, pósteres e links de media relacionados que escolhe utilizar para fazer check-in ou partilhar</li>
+      <li>Quando toca no botão "Lembrar o seu amigo", é enviada uma notificação push para o dispositivo desse amigo (contendo o seu nome de utilizador)</li>
+    </ul>
+    <p>A menos que o coloque num nome de utilizador, nota ou item de media, a aplicação não exige nem partilha intencionalmente o seu nome real, número de telefone, endereço de e-mail, medidas corporais ou peso com amigos.</p>
+    <p>O Identity utiliza o identificador de registo de utilizador do iCloud (CKUserRecordID) atribuído pela Apple. Este identificador normalmente não revela por si só a sua identidade no mundo real. No entanto, o programador pode visualizar e gerir registos no contentor CloudKit da Aplicação através de ferramentas CloudKit ao fornecer suporte, manter o serviço, lidar com abusos ou cumprir a lei.</p>
+    <p>A remoção de um amigo interrompe a partilha futura e impede que esse amigo veja novos check-ins através da aplicação. Os registos existentes do CloudKit, cópias de segurança de multimédia ou conteúdo já recebido noutro dispositivo não podem ser eliminados automática ou imediatamente. Contacte-nos através do e-mail abaixo para solicitar a eliminação do conteúdo relacionado na nuvem.</p>
+
+    <h3>7. Compras e subscrições na aplicação</h3>
+    <p>As assinaturas mensais, anuais e os desbloqueios vitalícios são processados pela Apple através da App Store. A aplicação <strong>não recebe o número do seu cartão de pagamento nem a palavra-passe do ID Apple</strong>; lê os resultados da compra e o estado dos direitos fornecidos pela Apple para determinar se as funcionalidades Pro devem ser desbloqueadas.</p>
+
+    <h3>8. Retenção, eliminação e segurança</h3>
+    <p>Controla os dados armazenados localmente no seu dispositivo e pode eliminá-los utilizando os controlos disponíveis da aplicação ou desinstalando a aplicação. Pode gerir os dados do iCloud através das definições do sistema iCloud. Os registos da base de dados pública do CloudKit e os suportes de cloud operados pelo programador são retidos enquanto razoavelmente necessários para funções de amizade, sincronização, cópia de segurança, recuperação, segurança e resolução de disputas.</p>
+    <p>Para perguntar ou solicitar a eliminação de conteúdos geridos por serviços na nuvem operados por programadores, envie um e-mail para <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> e forneça informações suficientes para localizar os registos. Processaremos os pedidos verificados de acordo com a lei aplicável, a segurança e os requisitos de prevenção de abusos.</p>
+    <p>Utilizamos proteções técnicas e organizacionais razoáveis, mas nenhum armazenamento local, transmissão de rede ou serviço na nuvem pode ser garantido como completamente seguro.</p>
+
+    <h3>9. Prestadores de serviços</h3>
+    <p>A aplicação pode utilizar os serviços App Store, StoreKit, HealthKit, iCloud, CloudKit, push notification e Apple Photos, juntamente com serviços de cloud configurados pelo programador para armazenamento de multimédia e funções de back-end necessárias. Cada fornecedor processa os dados de acordo com os seus próprios termos e política de privacidade.</p>
+
+    <h3>10. Privacidade das crianças</h3>
+    <p>A aplicação não é dirigida a crianças menores de 13 anos e não recolhe intencionalmente informações pessoais de crianças.</p>
+
+    <h3>11. Mudanças</h3>
+    <p>As atualizações desta política serão publicadas nesta página; a "Data de entrada em vigor" na parte superior será revista em conformidade.</p>
+
+    <h3>12. Contacto</h3>
+    <p>Dúvidas? Envie um e-mail para <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="ru" lang="ru" class="section">
+    <h2>политика конфиденциальности</h2>
+    <p class="meta">Дата вступления в силу: 1 октября 2026 г.</p>
+
+    <p>"Pumpa 练记" ("Приложение") разрабатывается и поддерживается независимым разработчиком, доступным по адресу <strong>xpzeng001@gmail.com</strong>. Мы серьезно относимся к вашей конфиденциальности. Эта политика объясняет, как Приложение обрабатывает ваши данные.</p>
+
+    <h3>1. Что мы обрабатываем</h3>
+    <p>Приложение не содержит сторонних SDK для аналитики, отслеживания или рекламы, и мы не продаем ваши личные данные.</p>
+    <p>Чтобы обеспечить ведение журнала тренировок, планы тренировок, статистику, историю и виджеты, приложение обрабатывает данные, которые вы вводите или создаете, включая записи тренировок, планы тренировок, выполненные подходы, параметры тела, предпочтения, статус подписки, а также фотографии тренировок или плакаты, которые вы хотите добавить.</p>
+    <p>Если вы не решите предоставить его или использовать функцию, которая этого требует, приложение не запрашивает ваше настоящее имя, номер телефона, адрес электронной почты или точное местоположение.</p>
+
+    <h3>2. Apple Health (необязательно)</h3>
+    <p>После того как вы дадите разрешение, приложение считывает данные о тренировках, частоту пульса, активную энергию, массу тела и частоту пульса в состоянии покоя из Apple Health, чтобы систематизировать историю тренировок, отображать показатели здоровья, генерировать статистику тренировок и показывать тенденции тела. Приложение не записывает данные в Apple Health.</p>
+    <p>Данные, считанные из Apple Health, хранятся только на вашем устройстве. Он не загружается на серверы разработчика, CloudKit или iCloud и не используется для рекламы, маркетинга, анализа данных или обмена с друзьями. Вы можете изменить или отозвать доступ в любое время в приложении «Здоровье» или в настройках системы.</p>
+
+    <h3>3. Локальное хранилище и синхронизация с iCloud</h3>
+    <p>Записи тренировок, измерения тела и настройки, которые вы создаете непосредственно в Pumpa, по умолчанию сохраняются локально на вашем устройстве.</p>
+    <p>Если у вас есть подписка Premium (Pro), приложение использует <strong>iCloud Key-Value Store</strong> Apple для синхронизации записей и настроек тренировок, созданных Pumpa, между устройствами, на которых выполнен вход с одним и тем же Apple ID. Данные, импортированные из Apple Health, исключаются из синхронизации iCloud.</p>
+    <p>Эти данные хранятся и управляются Apple под вашей учетной записью iCloud. Разработчик обычно не читает ваш личный контент синхронизации iCloud напрямую, в то время как Apple обрабатывает данные в соответствии со своими собственными условиями и политикой конфиденциальности. Вы можете отключить iCloud в разделе <em>Настройки → Apple ID → iCloud</em>.</p>
+
+    <h3>4. Камера, фотографии и распознавание позы</h3>
+    <p>Когда вы решите использовать задание на подтягивание, отжимание или подобное задание на распознавание, приложение обрабатывает изображение с камеры вашего устройства, чтобы проанализировать позу тела и оценить количество повторений. Кадры с камеры в реальном времени, используемые для распознавания, не загружаются на серверы разработчика только потому, что вы используете распознавание позы.</p>
+    <p>Если вы решите записать видео с соревнованием или сохранить плакат тренировки, приложение сохранит этот контент на вашем устройстве или в библиотеке фотографий после получения разрешения. Результаты распознавания предназначены только для отслеживания фитнеса и развлечений, могут быть неточными и не являются медицинскими диагнозами или профессиональными советами по вопросам здоровья.</p>
+
+    <h3>5. Медиафайлы для тренировок и облачное хранилище, управляемое разработчиками</h3>
+    <p>Когда вы решите добавить, поделиться или создать резервную копию фотографий тренировок, плакатов или видеороликов с соревнованиями, Приложение может загрузить выбранные вами медиафайлы в облачное хранилище, управляемое разработчиком или поставщиком услуг, для отображения в приложении, обмена с друзьями, резервного копирования и восстановления истории.</p>
+    <p>Загрузки могут включать медиафайл, тип файла, соответствующий идентификатор тренировки и медиассылки, необходимые для отображения. Мы не используем носители информации о тренировках или данные о тренировках для рекламы, отслеживания между приложениями или продажи третьим лицам.</p>
+    <p>Вы можете избежать загрузки медиафайлов, не добавляя их и не делясь ими. Загруженный контент сохраняется до тех пор, пока он необходим для обеспечения соответствующей функции. После того, как он больше не нужен или вы запросите удаление, он будет удален или анонимизирован, хотя резервные копии безопасности могут оставаться до тех пор, пока не завершатся разумный цикл ротации.</p>
+
+    <h3>6. Подотчетность друзей и CloudKit (необязательно)</h3>
+    <p>Если вы <strong>добавляете друга</strong>, приложение передает этому другу следующую информацию через общедоступную базу данных Apple CloudKit:</p>
+    <ul>
+      <li>Дата тренировки, продолжительность, количество сожженных калорий и название категории упражнений.</li>
+      <li><strong>Отображаемое имя</strong>, которое вы задаете в приложении (по умолчанию это имя вашего устройства; его можно изменить в разделе <em>Инструменты → Взаимный контроль друзей</em>; это то, что видят друзья)</li>
+      <li>Фотографии тренировок, плакаты и соответствующие медиа-ссылки, которые вы решите использовать, чтобы отметиться или поделиться ими.</li>
+      <li>Когда вы нажимаете кнопку «Напомнить другу», на устройство этого друга отправляется push-уведомление (содержащее ваше отображаемое имя).</li>
+    </ul>
+    <p>Если вы не разместите его в отображаемом имени, заметке или элементе мультимедиа, Приложение не требует и не намеренно раскрывает друзьям ваше настоящее имя, номер телефона, адрес электронной почты, параметры тела или вес.</p>
+    <p>Идентификация использует идентификатор записи пользователя iCloud (CKUserRecordID), назначенный Apple. Этот идентификатор обычно сам по себе не раскрывает вашу реальную личность. Однако разработчик может просматривать и управлять записями в контейнере CloudKit приложения с помощью инструментов CloudKit при предоставлении поддержки, обслуживании службы, борьбе со злоупотреблениями или соблюдении закона.</p>
+    <p>При удалении друга прекращается обмен информацией в будущем, и этот друг не может просматривать новые отметки через приложение. Существующие записи CloudKit, резервные копии носителей или контент, уже полученный на другом устройстве, не могут быть удалены автоматически или немедленно. Свяжитесь с нами по электронной почте ниже, чтобы запросить удаление соответствующего облачного контента.</p>
+
+    <h3>7. Покупки и подписки в приложении</h3>
+    <p>Ежемесячные и годовые подписки, а также пожизненная разблокировка обрабатываются Apple через App Store. Приложение <strong>не получает номер вашей платежной карты или пароль Apple ID</strong>; он считывает результаты покупки и статус прав, предоставленные Apple, чтобы определить, следует ли разблокировать функции Pro.</p>
+
+    <h3>8. Хранение, удаление и безопасность</h3>
+    <p>Вы контролируете данные, хранящиеся локально на вашем устройстве, и можете удалить их, используя доступные элементы управления Приложением или удалив Приложение. Вы можете управлять данными iCloud через системные настройки iCloud. Записи общедоступной базы данных CloudKit и облачные носители, управляемые разработчиками, сохраняются, пока они разумно необходимы для функций дружбы, синхронизации, резервного копирования, восстановления, безопасности и разрешения споров.</p>
+    <p>Чтобы задать вопрос или запросить удаление контента, обрабатываемого облачными службами, управляемыми разработчиками, отправьте электронное письмо по адресу <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> и предоставьте достаточно информации, чтобы найти записи. Мы будем обрабатывать проверенные запросы в соответствии с действующим законодательством, требованиями безопасности и предотвращения злоупотреблений.</p>
+    <p>Мы используем разумные технические и организационные меры безопасности, но никакое локальное хранилище, сетевая передача или облачные службы не могут гарантировать полную безопасность.</p>
+
+    <h3>9. Поставщики услуг</h3>
+    <p>Приложение может использовать службы Apple App Store, StoreKit, HealthKit, iCloud, CloudKit, push-уведомлений и фотографий, а также облачные службы, настроенные разработчиком для хранения мультимедиа и необходимых серверных функций. Каждый поставщик обрабатывает данные в соответствии со своими условиями и политикой конфиденциальности.</p>
+
+    <h3>10. Конфиденциальность детей</h3>
+    <p>Приложение не предназначено для детей до 13 лет и не собирает сознательно личную информацию детей.</p>
+
+    <h3>11. Изменения</h3>
+    <p>Обновления этой политики будут публиковаться на этой странице; «Дата вступления в силу» вверху будет соответствующим образом изменена.</p>
+
+    <h3>12. Контакт</h3>
+    <p>Вопросы? Отправьте электронное письмо по адресу <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>.</p>
+  </section>
+
+  <section id="tr" lang="tr" class="section">
+    <h2>gizlilik politikası</h2>
+    <p class="meta">Geçerlilik tarihi: 1 Ekim 2026</p>
+
+    <p>"Pumpa 练记" ("Uygulama"), <strong>xpzeng001@gmail.com</strong> adresinden ulaşılabilen bağımsız bir geliştirici tarafından geliştirilmiş ve bakımı yapılmıştır. Gizliliğinizi ciddiye alıyoruz. Bu politika, Uygulamanın verilerinizi nasıl işlediğini açıklamaktadır.</p>
+
+    <h3>1. Neleri işliyoruz</h3>
+    <p>Uygulama hiçbir üçüncü taraf analizi, izleme veya reklam SDK'sı içermez ve kişisel verilerinizi satmayız.</p>
+    <p>Antrenman günlüğü, antrenman planları, istatistikler, geçmiş ve widget'lar sağlamak için Uygulama, antrenman kayıtları, antrenman planları, tamamlanan setler, vücut ölçümleri, tercihler, abonelik durumu ve eklemeyi seçtiğiniz antrenman fotoğrafları veya posterleri dahil olmak üzere girdiğiniz veya oluşturduğunuz verileri işler.</p>
+    <p>Siz bunu sağlamayı veya bunu gerektiren bir özelliği kullanmayı seçmediğiniz sürece Uygulama gerçek adınızı, telefon numaranızı, e-posta adresinizi veya tam konumunuzu istemez.</p>
+
+    <h3>2. Apple Sağlık (isteğe bağlı)</h3>
+    <p>Siz izin verdikten sonra Uygulama, egzersiz geçmişini düzenlemek, sağlık ölçümlerini görüntülemek, egzersiz istatistikleri oluşturmak ve vücut eğilimlerini göstermek için Apple Health'ten egzersizleri, kalp atış hızını, aktif enerjiyi, vücut kütlesini ve dinlenme kalp atış hızını okur. Uygulama, Apple Health'e veri yazmaz.</p>
+    <p>Apple Health'ten okunan veriler yalnızca cihazınızda depolanır. Geliştiricinin sunucularına, CloudKit'e veya iCloud'a yüklenmez ve reklam, pazarlama, veri madenciliği veya arkadaşlarla paylaşım amacıyla kullanılmaz. Erişimi istediğiniz zaman Sağlık uygulamasından veya sistem ayarlarından değiştirebilir veya iptal edebilirsiniz.</p>
+
+    <h3>3. Yerel depolama ve iCloud senkronizasyonu</h3>
+    <p>Doğrudan Pumpa'da oluşturduğunuz antrenman kayıtları, vücut ölçüleri ve tercihler, varsayılan olarak cihazınızda yerel olarak depolanır.</p>
+    <p>Premium (Pro) aboneliğiniz varsa Uygulama, Pumpa tarafından oluşturulan antrenman kayıtlarını ve ayarlarını aynı Apple kimliğiyle oturum açan cihazlar arasında senkronize etmek için Apple'ın <strong>iCloud Anahtar-Değer Mağazasını</strong> kullanır. Apple Health'ten içe aktarılan veriler iCloud senkronizasyonunun dışında bırakılır.</p>
+    <p>Bu veriler Apple tarafından iCloud hesabınız altında saklanır ve yönetilir. Geliştirici normalde özel iCloud senkronizasyon içeriğinizi doğrudan okumaz; Apple ise verileri kendi koşulları ve gizlilik politikası kapsamında işler. <em>Ayarlar → Apple Kimliği → iCloud</em> altında iCloud'u devre dışı bırakabilirsiniz.</p>
+
+    <h3>4. Kamera, Fotoğraflar ve poz tanıma</h3>
+    <p>Barfiks, şınav veya benzer bir tanıma mücadelesi kullanmayı seçtiğinizde Uygulama, vücut pozunu analiz etmek ve tekrarları tahmin etmek için cihazınızdaki kamera akışını işler. Tanıma için kullanılan canlı kamera kareleri, yalnızca poz tanımayı kullandığınız için geliştiricinin sunucularına yüklenmez.</p>
+    <p>Bir meydan okuma videosu kaydetmeyi veya bir antrenman posteri kaydetmeyi seçerseniz Uygulama, izin aldıktan sonra bu içeriği cihazınıza veya Fotoğraflar kitaplığınıza kaydeder. Tanıma sonuçları yalnızca fitness takibi ve eğlence amaçlıdır, hatalı olabilir ve tıbbi teşhis veya profesyonel sağlık tavsiyesi değildir.</p>
+
+    <h3>5. Antrenman medyası ve geliştirici tarafından çalıştırılan bulut depolama alanı</h3>
+    <p>Antrenman fotoğrafları, posterler veya meydan okuma videoları eklemeyi, paylaşmayı veya yedeklemeyi seçtiğinizde Uygulama, seçtiğiniz medyayı, Uygulama içi görüntüleme, arkadaş paylaşımı, yedekleme ve geçmiş kurtarma için geliştirici veya hizmet sağlayıcı tarafından işletilen bulut depolama alanına yükleyebilir.</p>
+    <p>Yüklemeler medya dosyasını, dosya türünü, ilgili antrenman tanımlayıcısını ve görüntülenmesi için gereken medya bağlantılarını içerebilir. Antrenman medyasını veya antrenman verilerini reklam, uygulamalar arası takip veya üçüncü taraflara satış amacıyla kullanmayız.</p>
+    <p>Medyayı eklemeyerek veya paylaşmayarak yüklemekten kaçınabilirsiniz. Yüklenen içerik, ilgili özelliğin sağlanması için ihtiyaç duyulduğu sürece korunur. Artık gerekli olmadığında veya silinmesini talep ettiğinizde silinecek veya anonimleştirilecektir, ancak güvenlik yedekleri makul bir rotasyon döngüsünü tamamlayana kadar kalabilir.</p>
+
+    <h3>6. Arkadaşınızın sorumluluğu ve CloudKit (isteğe bağlı)</h3>
+    <p><strong>Bir arkadaş eklerseniz</strong> Uygulama, Apple'ın CloudKit genel veritabanı aracılığıyla bu arkadaşınızla aşağıdakileri paylaşır:</p>
+    <ul>
+      <li>Antrenman tarihi, süresi, yakılan kalori ve egzersiz kategorisi adı</li>
+      <li>Uygulama içinde ayarladığınız <strong>görünen ad</strong> (varsayılan olarak cihazınızın adıdır; <em>Araçlar → Friend Mutual Supervision</em> altında düzenlenebilir; arkadaşlarınızın gördüğü addır)</li>
+      <li>Giriş yapmak veya paylaşmak için kullanmayı seçtiğiniz antrenman fotoğrafları, posterler ve ilgili medya bağlantıları</li>
+      <li>"Arkadaşınıza hatırlat" düğmesine dokunduğunuzda, o arkadaşınızın cihazına (görünen adınızı içeren) bir anında bildirim gönderilir</li>
+    </ul>
+    <p>Görünen adınıza, notunuza veya medya öğesine yerleştirmediğiniz sürece Uygulama, gerçek adınızı, telefon numaranızı, e-posta adresinizi, vücut ölçülerinizi veya kilonuzu arkadaşlarınızla paylaşmanızı gerektirmez veya kasıtlı olarak arkadaşlarınızla paylaşmaz.</p>
+    <p>Kimlik, Apple tarafından atanan iCloud kullanıcı kaydı tanımlayıcısını (CKUserRecordID) kullanır. Bu tanımlayıcı normalde gerçek dünyadaki kimliğinizi tek başına açığa çıkarmaz. Ancak geliştirici, destek sağlarken, hizmeti sürdürürken, kötüye kullanımla mücadele ederken veya yasalara uyarken Uygulamanın CloudKit kapsayıcısındaki kayıtları CloudKit araçları aracılığıyla görüntüleyebilir ve yönetebilir.</p>
+    <p>Bir arkadaşın kaldırılması gelecekteki paylaşımları durdurur ve o arkadaşın Uygulama aracılığıyla yeni check-in'leri görüntülemesini engeller. Mevcut CloudKit kayıtları, medya yedekleri veya halihazırda başka bir cihaza alınmış olan içerik otomatik olarak veya hemen silinemez. İlgili bulut içeriğinin silinmesini talep etmek için aşağıdaki e-postayı kullanarak bize ulaşın.</p>
+
+    <h3>7. Uygulama içi satın alma işlemleri ve abonelikler</h3>
+    <p>Aylık abonelikler, yıllık abonelikler ve ömür boyu kilit açma işlemleri Apple tarafından App Store aracılığıyla gerçekleştirilir. Uygulama <strong>ödeme kartı numaranızı veya Apple Kimliği şifrenizi almaz</strong>; Pro özelliklerinin kilidinin açılıp açılmayacağını belirlemek için satın alma sonuçlarını ve Apple tarafından sağlanan yetki durumunu okur.</p>
+
+    <h3>8. Saklama, silme ve güvenlik</h3>
+    <p>Cihazınızda yerel olarak depolanan verileri siz kontrol edersiniz ve mevcut Uygulama kontrollerini kullanarak veya Uygulamanın yüklemesini kaldırarak bunları silebilirsiniz. İCloud verilerini sistem iCloud ayarları aracılığıyla yönetebilirsiniz. CloudKit genel veritabanı kayıtları ve geliştirici tarafından işletilen bulut medyası, arkadaş edinme, senkronizasyon, yedekleme, kurtarma, güvenlik ve anlaşmazlık çözümü işlevleri için makul ölçüde ihtiyaç duyulduğu sürece korunur.</p>
+    <p>Geliştirici tarafından işletilen bulut hizmetleri tarafından işlenen içerikle ilgili soru sormak veya bu içeriğin silinmesini talep etmek için <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>'a e-posta gönderin ve kayıtları bulmak için yeterli bilgi sağlayın. Doğrulanmış istekleri geçerli yasa, güvenlik ve kötüye kullanımı önleme gerekliliklerine tabi olarak işleme koyacağız.</p>
+    <p>Makul teknik ve organizasyonel önlemler kullanıyoruz ancak hiçbir yerel depolama, ağ aktarımı veya bulut hizmetinin tamamen güvenli olduğu garanti edilemez.</p>
+
+    <h3>9. Servis sağlayıcılar</h3>
+    <p>Uygulama, Apple'ın App Store, StoreKit, HealthKit, iCloud, CloudKit, push bildirimi ve Fotoğraflar hizmetlerinin yanı sıra geliştirici tarafından medya depolama ve gerekli arka uç işlevleri için yapılandırılan bulut hizmetlerini kullanabilir. Her sağlayıcı, verileri kendi koşulları ve gizlilik politikası kapsamında işler.</p>
+
+    <h3>10. Çocukların gizliliği</h3>
+    <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocukların kişisel bilgilerini toplamaz.</p>
+
+    <h3>11. Değişiklikler</h3>
+    <p>Bu politikaya ilişkin güncellemeler bu sayfada yayınlanacaktır; üst kısımdaki "Geçerlilik tarihi" buna göre revize edilecektir.</p>
+
+    <h3>12. İletişim</h3>
+    <p>Sorularınız mı var? <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>'a e-posta gönderin.</p>
+  </section>
+
+  <section id="zh-Hant" lang="zh-Hant" class="section">
+    <h2>隱私權政策</h2>
+    <p class="meta">生效日期：2026 年 10 月 1 日</p>
+
+    <p>「Pumpa 練記」（「應用程式」）由獨立開發人員開發和維護，聯絡方式為<strong>xpzeng001@gmail.com</strong>。我們認真對待您的隱私。本政策解釋了應用程式如何處理您的資料。 </p>
+
+    <h3>1。我們處理什麼</h3>
+    <p>該應用程式不包含第三方分析、追蹤或廣告 SDK，而且我們不會出售您的個人資料。 </p>
+    <p>為了提供鍛鍊記錄、訓練計劃、統計數據、歷史記錄和小部件，該應用程式會處理您輸入或產生的數據，包括鍛鍊記錄、訓練計劃、完成的組數、身體測量值、偏好設定、訂閱狀態以及您選擇添加的鍛鍊照片或海報。 </p>
+    <p>除非您選擇提供或使用需要它的功能，否則應用程式不會詢問您的真實姓名、電話號碼、電子郵件地址或精確位置。 </p>
+
+    <h3>2。蘋果健康（可選）</h3>
+    <p>在您授予權限後，該應用程式會從 Apple Health 讀取運動、心率、活躍能量、體重和靜息心率，以整理運動歷史記錄、顯示健康指標、產生運動統計數據並顯示身體趨勢。該應用程式不會將資料寫入 Apple Health。 </p>
+    <p>從 Apple Health 讀取的資料僅儲存在您的裝置上。它不會上傳到開發者的伺服器、CloudKit 或 iCloud，也不會用於廣告、行銷、資料探勘或與朋友分享。您可以隨時在「健康」應用程式或系統設定中變更或撤銷存取權限。 </p>
+
+    <h3>3。本機儲存與 iCloud 同步</h3>
+    <p>預設情況下，您直接在 Pumpa 中建立的運動記錄、身體測量數據和偏好設定會在您的裝置上本地儲存。 </p>
+    <p>如果您訂閱了 Premium (Pro)，該應用程式將使用 Apple 的 <strong>iCloud Key-Value Store</strong> 在登入相同 Apple ID 的裝置之間同步 Pumpa 建立的鍛鍊記錄和設定。從 Apple Health 匯入的資料不包含在 iCloud 同步中。 </p>
+    <p>此資料由 Apple 在您的 iCloud 帳戶下儲存和管理。開發者通常不會直接讀取您的私人 iCloud 同步內容，而 Apple 則根據自己的條款和隱私權政策處理資料。您可以在<em>設定 → Apple ID → iCloud</em> 下停用 iCloud。 </p>
+
+    <h3>4。相機、照片和姿勢辨識</h3>
+    <p>當您選擇使用引體向上、俯臥撐或類似的識別挑戰時，應用程式會處理裝置上的攝影機訊息，以分析身體姿勢並估計重複次數。用於識別的即時相機幀不會僅僅因為您使用姿勢識別而上傳到開發者的伺服器。 </p>
+    <p>如果您選擇錄製挑戰影片或儲存鍛鍊海報，應用程式會在獲得許可後將該內容儲存到您的裝置或照片庫中。識別結果僅供健身追蹤和娛樂之用，可能不準確，並非醫療診斷或專業健康建議。 </p>
+
+    <h3>5。鍛鍊媒體與開發人員營運的雲端儲存</h3>
+    <p>當您選擇新增、分享或備份鍛鍊照片、海報或挑戰影片時，應用程式可能會將您選擇的媒體上傳到開發者或服務提供者經營的雲端儲存中，用於應用程式內展示、好友分享、備份和歷史記錄復原。 </p>
+    <p>上傳可能包括媒體檔案、檔案類型、相關鍛鍊標識符以及顯示所需的媒體連結。我們不會將鍛鍊媒體或鍛鍊數據用於廣告、跨應用程式追蹤或向第三方銷售。 </p>
+    <p>您可以透過不新增或分享媒體來避免上傳媒體。上傳的內容在需要提供相關功能時會保留。在不再需要或您要求刪除後，它將被刪除或匿名化，但安全備份可能會保留到完成合理的輪換週期為止。 </p>
+
+    <h3>6。好友責任和 CloudKit（可選）</h3>
+    <p>如果您<strong>新增朋友</strong>，該應用程式會透過 Apple 的 CloudKit 公共資料庫與該朋友分享以下內容：</p>
+    <ul>
+      <li>運動日期、持續時間、消耗的卡路里和運動類別名稱</li>
+      <li>您在應用程式內設定的<strong>顯示名稱</strong>（預設為您的裝置名稱；可在<em>工具 → 好友相互監督</em>下編輯；這是好友看到的內容）</li>
+      <li>您選擇用於簽到或分享的鍛鍊照片、海報和相關媒體連結</li>
+      <li>當您點擊「提醒您的朋友」按鈕時，系統會向該朋友的裝置發送推播通知（包含您的顯示名稱）</li>
+    </ul>
+    <p>除非您將其放入顯示名稱、註釋或媒體項目中，否則應用程式不會要求或有意與朋友分享您的真實姓名、電話號碼、電子郵件地址、身體測量或體重。 </p>
+    <p>Identity 使用 Apple 分配的 iCloud 用户记录标识符 (CKUserRecordID)。该标识符本身通常不会透露您的真实身份。但是，開發者在提供支援、維護服務、解決濫用問題或遵守法律時可以透過 CloudKit 工具查看和管理應用的 CloudKit 容器中的記錄。 </p>
+    <p>删除好友会停止未来的共享，并阻止该好友通过应用程序查看新的签到情况。现有的 CloudKit 记录、媒体备份或其他设备上已接收的内容可能不会自动或立即删除。使用下面的电子邮件联系我们，请求删除相关的云内容。 </p>
+
+    <h3>7。應用程式內購買和訂閱</h3>
+    <p>按月订阅、按年订阅和终身解锁均由 Apple 通过 App Store 处理。該應用程式<strong>未收到您的支付卡號或 Apple ID 密碼</strong>；它讀取 Apple 提供的購買結果和權利狀態，以確定是否應解鎖 Pro 功能。 </p>
+
+    <h3>8。保留、刪除和安全性</h3>
+    <p>您可以控制设备本地存储的数据，并可以使用可用的应用程序控件或通过卸载应用程序来删除数据。您可以通过系统 iCloud 设置来管理 iCloud 数据。 CloudKit 公用資料庫記錄和開發人員營運的雲端媒體將在好友、同步、備份、復原、安全性和爭議解決功能合理需要時予以保留。 </p>
+    <p>要詢問或要求刪除由開發人員經營的雲端服務處理的內容，請發送電子郵件至 <a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a> 並提供足夠的資訊來查找記錄。我們將根據適用的法律、安全和防濫用要求處理經過驗證的請求。 </p>
+    <p>我們使用合理的技術和組織保障措施，但無法保證本地儲存、網路傳輸或雲端服務完全安全。 </p>
+
+    <h3>9。服務提供者</h3>
+    <p>該應用程式可以使用Apple的App Store、StoreKit、HealthKit、iCloud、CloudKit、推播通知和照片服務，以及開發者為媒體儲存和必要的後端功能配置的雲端服務。每個提供者都根據自己的條款和隱私權政策處理資料。 </p>
+
+    <h3>10。兒童隱私權</h3>
+    <p>該應用程式不針對 13 歲以下的兒童，也不會故意收集兒童的個人資訊。 </p>
+
+    <h3>11。變化</h3>
+    <p>此政策的更新將發佈在此頁面上；頂部的「生效日期」將進行相應修改。 </p>
+
+    <h3>12。聯絡方式</h3>
+    <p>有疑問嗎？電子郵件<a href="mailto:xpzeng001@gmail.com">xpzeng001@gmail.com</a>。 </p>
+  </section>
+
   <section id="en" class="section">
-    <h2>English Version</h2>
-    <p class="meta">Effective date: September 6, 2026</p>
+    <h2>Privacy Policy</h2>
+    <p class="meta">Effective date: October 1, 2026</p>
 
     <p>"Pumpa 练记" (the "App") is developed and maintained by an independent developer reachable at <strong>xpzeng001@gmail.com</strong>. We take your privacy seriously. This policy explains how the App handles your data.</p>
 
@@ -166,5 +1117,18 @@ strong { color: #fff; }
 
   <a class="back" href="index.html">← 返回首页 / Back home</a>
 </div>
+<script>
+(() => {
+ const pageTitles={"ar":"سياسة الخصوصية","ca":"Política de privadesa","de":"Datenschutzrichtlinie","en":"Privacy Policy","es":"Política de privacidad","fr":"Politique de confidentialité","hi":"गोपनीयता नीति","it":"Informativa sulla privacy","ja":"プライバシーポリシー","ko":"개인 정보 보호 정책","pl":"Polityka prywatności","pt-BR":"Política de Privacidade","pt-PT":"Política de Privacidade","ru":"политика конфиденциальности","tr":"gizlilik politikası","zh-Hans":"隐私政策","zh-Hant":"隱私權政策"};
+ const supported=['ar','ca','de','en','es','fr','hi','it','ja','ko','pl','pt-BR','pt-PT','ru','tr','zh-Hans','zh-Hant'];
+ const select=document.getElementById('languageSelector');
+ const sections=[...document.querySelectorAll('section.section')];
+ const normalize=value=>{const v=(value||'').replace('_','-');if(/^zh-(TW|HK|MO)/i.test(v)||/^zh-Hant/i.test(v))return'zh-Hant';if(/^zh/i.test(v))return'zh-Hans';if(/^pt-PT/i.test(v))return'pt-PT';const exact=supported.find(c=>c.toLowerCase()===v.toLowerCase());if(exact)return exact;const base=v.split('-')[0].toLowerCase();return supported.find(c=>c.toLowerCase()===base)||'en';};
+ const query=new URLSearchParams(location.search).get('lang');
+ const initial=normalize(query||(navigator.languages||[navigator.language||'en'])[0]);
+ function show(code,updateUrl){code=supported.includes(code)?code:'en';sections.forEach(s=>{s.hidden=s.id!==code;});select.value=code;document.documentElement.lang=code;document.documentElement.dir=code==='ar'?'rtl':'ltr';document.getElementById('pageTitle').textContent=pageTitles[code];document.title=pageTitles[code]+' · Pumpa 练记';if(updateUrl){const url=new URL(location.href);url.searchParams.set('lang',code);history.replaceState(null,'',url);}}
+ show(initial,!query);select.addEventListener('change',()=>show(select.value,true));
+})();
+</script>
 </body>
 </html>
